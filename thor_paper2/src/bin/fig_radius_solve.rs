@@ -120,8 +120,8 @@ fn read_kept(parquet: &Path) -> HashMap<u32, Vec<(u64, i64, f64, f64)>> {
     out
 }
 
-/// The tiler record's windows, keyed by the dump's file stem and the window index: (settled, rounds, radius_deg, r2).
-/// The stem is built with the tiler's own format (`sizing::tile::dump_region_windows`).
+/// The tiler record's windows, keyed by the dump's region (its file stem without the share, [`region_key`]) and the
+/// window index: (settled, rounds, radius_deg, r2). The key is built with the tiler's own format (`sizing::tile::dump_tag`).
 fn read_tiler_record(path: &Path) -> HashMap<(String, u64), (Option<bool>, Option<u64>, f64, Value)> {
     let rec: Value = serde_json::from_reader(File::open(path).expect("tiler record")).expect("parse tiler record");
     let budget = rec["budget"].as_f64().expect("record budget");
@@ -152,6 +152,16 @@ fn read_tiler_record(path: &Path) -> HashMap<(String, u64), (Option<bool>, Optio
         }
     }
     out
+}
+
+/// A dump's file stem without its share. The tiler names a dump `<region>_S<start>+<days>_B<budget>` since D-024
+/// (`sizing::tile::dump_tag`), and `<region>_B<budget>` before; the record's regions carry no share, so both forms key
+/// by `<region>_B<budget>`.
+fn region_key(stem: &str) -> String {
+    match (stem.find("_S"), stem.rfind("_B")) {
+        (Some(i), Some(j)) if i < j => format!("{}{}", &stem[..i], &stem[j..]),
+        _ => stem.to_string(),
+    }
 }
 
 fn solution_json(s: RadiusSolution) -> Value {
@@ -284,7 +294,11 @@ fn main() {
                 solution,
                 rel_mismatch,
                 e_at_dump_radius,
-                tiler: tiler.as_ref().and_then(|t| t.get(&(stem.clone(), index)).cloned()),
+                tiler: tiler.as_ref().map(|t| {
+                    t.get(&(region_key(&stem), index))
+                        .cloned()
+                        .unwrap_or_else(|| panic!("{stem} w{index}: no window in the tiler record"))
+                }),
             };
             eprintln!(
                 "{stem} w{index}: {} kept, {} nights, {:.0} /deg2/night, R dump {:.4}\", solve {:?}, mismatch {:.2e}, E(R dump) {:.2}, record {:?}",
