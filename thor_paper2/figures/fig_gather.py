@@ -35,6 +35,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 import pyarrow.parquet as pq  # noqa: E402
 from matplotlib.colors import ListedColormap  # noqa: E402
+from matplotlib.patches import FancyBboxPatch  # noqa: E402
 
 import thorstyle as ts  # noqa: E402
 
@@ -143,6 +144,9 @@ def main() -> None:
              lw=1.0, solid_capstyle="round")
     sky_axes(axb, float(np.median([e["predicted_dec_deg"] for e in exposures])))
     ts.tidy(axb, 4, 4)
+    # The colour bar sits on a plain patch, like a legend, so the apertures' outlines never run through its label.
+    axb.add_patch(FancyBboxPatch((0.035, 0.035), 0.4, 0.17, boxstyle="round,pad=0,rounding_size=0.01",
+                                 transform=axb.transAxes, facecolor=ts.PAPER, edgecolor=ts.INK_SECONDARY, lw=0.4, zorder=5))
     cax = axb.inset_axes([0.06, 0.115, 0.34, 0.03])
     cb = fig.colorbar(sc, cax=cax, orientation="horizontal", ticks=[-4, -2, 0, 2])
     cb.set_label(r"$t - t_0$ (d)", labelpad=1.5)
