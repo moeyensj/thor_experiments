@@ -1,5 +1,6 @@
 # Experiments behind the numbers and figures of the THOR 2 papers. Each binary in src/bin reproduces one set of numbers
-# from declared inputs and writes them, stamped with THOR's commit and the inputs' SHA-256, to results/ and generated/.
+# from declared inputs and writes them, stamped with this repository's commit, THOR's commit and the inputs' SHA-256, to
+# results/ here and (--out-tex) to generated/ in a checkout of the paper, moeyensj/thor_paper2.
 #
 # THOR is pinned to the exact commit in thor.rev; ./fetch_thor.sh extracts it into vendor/thor-rs (not committed).
 [package]

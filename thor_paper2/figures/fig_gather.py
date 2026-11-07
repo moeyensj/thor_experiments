@@ -1,7 +1,7 @@
 """THOR 2's gather for one test orbit: the THOR 2 counterpart of THOR 1's Figures 1 and 2 (Moeyens et al. 2021).
 
-Reads what experiments/src/bin/fig_gather.rs wrote (experiments/results/fig_gather/: detections.parquet and fig_gather.json)
-and draws three panels into generated/fig_gather.pdf, with a PNG preview in figures/preview/ (not committed):
+Reads what src/bin/fig_gather.rs wrote (results/fig_gather/: detections.parquet and fig_gather.json)
+and draws three panels into the paper's generated/fig_gather.pdf, with a PNG preview in figures/preview/ (not committed):
 
   (a) one exposure on the sky: its detections inside twice the aperture, gathered (blue) or not (grey); the guard of the
       segment that covers the exposure (the aperture the gather tested, black); the covariance ellipse at that instant
@@ -15,15 +15,18 @@ and draws three panels into generated/fig_gather.pdf, with a PNG preview in figu
 
 Every ellipse is drawn from the guard's own fields (centre direction, tangent basis e1/e2, semi-axes, angle) by inverting
 THOR's containment test (`OrientedGuard::contains_dir`: angles atan2(d.e1, d.c) and atan2(d.e2, d.c) inside the ellipse), so
-the outline is the boundary the gather applied. Run from the repository root with the paper's venv:
+the outline is the boundary the gather applied. Run from thor_paper2/ with the paper's venv, PAPER a checkout of
+moeyensj/thor_paper2:
 
-    python figures/fig_gather.py
+    python figures/fig_gather.py $PAPER
 """
 from __future__ import annotations
 
 import json
 import os
 import pathlib
+import subprocess
+import sys
 
 import matplotlib
 
@@ -36,8 +39,7 @@ from matplotlib.colors import ListedColormap  # noqa: E402
 import thorstyle as ts  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-RESULTS = ROOT / "experiments" / "results" / "fig_gather"
-OUT_PDF = ROOT / "generated" / "fig_gather"
+RESULTS = ROOT / "results" / "fig_gather"
 OUT_PREVIEW = ROOT / "figures" / "preview" / "fig_gather"
 
 
@@ -85,7 +87,15 @@ def sky_axes(ax, dec0: float) -> None:
     ax.set_ylabel(r"$\delta$ (deg)")
 
 
+def paper_dir() -> pathlib.Path:
+    """The checkout of moeyensj/thor_paper2 the figure is drawn into: the script's one argument."""
+    if len(sys.argv) != 2 or not (pathlib.Path(sys.argv[1]) / "generated").is_dir():
+        raise SystemExit(f"usage: python {sys.argv[0]} PAPER   (PAPER: a checkout of moeyensj/thor_paper2)")
+    return pathlib.Path(sys.argv[1])
+
+
 def main() -> None:
+    out_pdf = paper_dir() / "generated" / "fig_gather"
     os.environ.setdefault("SOURCE_DATE_EPOCH", "0")  # a PDF that does not change when nothing it shows changed
     rec = json.loads((RESULTS / "fig_gather.json").read_text())
     tab = pq.read_table(RESULTS / "detections.parquet")
@@ -168,11 +178,14 @@ def main() -> None:
     for ax, letter in zip((axa, axb, axc), "abc"):
         ts.panel_label(ax, letter)
 
-    provenance = {"figure": "figures/fig_gather.py", "thor": rec["thor_pin"][:12], "test_orbit": rec["test_orbit"]["id"],
-                  "data": "experiments/results/fig_gather/detections.parquet sha256 " + rec["table"]["sha256"][:16]}
-    ts.savefig(fig, OUT_PDF, provenance=provenance, formats=("pdf",))
+    provenance = {"figure": "thor_paper2/figures/fig_gather.py", "thor": rec["thor_pin"][:12],
+                  "test_orbit": rec["test_orbit"]["id"],
+                  "data": "thor_paper2/results/fig_gather/detections.parquet sha256 " + rec["table"]["sha256"][:16],
+                  "experiments": subprocess.run(["git", "-C", str(ROOT), "rev-parse", "--short=12", "HEAD"],
+                                                capture_output=True, text=True).stdout.strip() or "unknown"}
+    ts.savefig(fig, out_pdf, provenance=provenance, formats=("pdf",))
     ts.savefig(fig, OUT_PREVIEW, provenance=provenance, formats=("png",))
-    print(f"wrote {OUT_PDF.with_suffix('.pdf')} and {OUT_PREVIEW.with_suffix('.png')}")
+    print(f"wrote {out_pdf.with_suffix('.pdf')} and {OUT_PREVIEW.with_suffix('.png')}")
     print("panel (c) highlights:", ", ".join(f"{des[o]} ({len(tracks[o])} detections)" for o in strong))
 
 

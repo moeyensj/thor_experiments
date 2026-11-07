@@ -1,16 +1,16 @@
 """THOR 2's radius solve: the expected chance groupings E(R) against the clustering radius R for real windows.
 
-Reads what experiments/src/bin/fig_radius_solve.rs wrote (experiments/results/fig_radius_solve.json) and draws one
-column-width panel into generated/fig_radius_solve.pdf, with a PNG preview in figures/preview/ (not committed):
+Reads what src/bin/fig_radius_solve.rs wrote (results/fig_radius_solve.json) and draws one
+column-width panel into the paper's generated/fig_radius_solve.pdf, with a PNG preview in figures/preview/ (not committed):
 
   log E against log R, one line per window (THOR's clustering::background over the window's kept detections, at the
   window's rule, with the hypotheses unbounded as the sizing function prices them), coloured from the sparsest background
   to the densest; the budget B (horizontal); the astrometric floor (vertical); and each window's solved radius, where its
   curve first crosses B.
 
-Run from the repository root with the paper's venv:
+Run from thor_paper2/ with the paper's venv, PAPER a checkout of moeyensj/thor_paper2:
 
-    python figures/fig_radius_solve.py
+    python figures/fig_radius_solve.py $PAPER
 """
 from __future__ import annotations
 
@@ -19,6 +19,7 @@ import json
 import os
 import pathlib
 import subprocess
+import sys
 
 import matplotlib
 
@@ -30,14 +31,21 @@ from matplotlib.ticker import FixedLocator, FuncFormatter, LogLocator, NullForma
 import thorstyle as ts  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-RESULTS = ROOT / "experiments" / "results" / "fig_radius_solve.json"
-OUT_PDF = ROOT / "generated" / "fig_radius_solve"
+RESULTS = ROOT / "results" / "fig_radius_solve.json"
 OUT_PREVIEW = ROOT / "figures" / "preview" / "fig_radius_solve"
 
 Y_LIMITS = (1e-6, 1e6)  # the curves start near 1e-7 at 0.1" and peak below 1e5
 
 
+def paper_dir() -> pathlib.Path:
+    """The checkout of moeyensj/thor_paper2 the figure is drawn into: the script's one argument."""
+    if len(sys.argv) != 2 or not (pathlib.Path(sys.argv[1]) / "generated").is_dir():
+        raise SystemExit(f"usage: python {sys.argv[0]} PAPER   (PAPER: a checkout of moeyensj/thor_paper2)")
+    return pathlib.Path(sys.argv[1])
+
+
 def main() -> None:
+    out_pdf = paper_dir() / "generated" / "fig_radius_solve"
     os.environ.setdefault("SOURCE_DATE_EPOCH", "0")  # a PDF that does not change when nothing it shows changed
     raw = RESULTS.read_bytes()
     rec = json.loads(raw)
@@ -77,12 +85,12 @@ def main() -> None:
     ax.legend(title=r"Detections deg$^{-2}$ night$^{-1}$", loc="lower right", title_fontsize=small)
 
     pin = subprocess.run(["git", "-C", str(ROOT), "rev-parse", "--short=12", "HEAD"], capture_output=True, text=True)
-    provenance = {"figure": "figures/fig_radius_solve.py", "thor": rec["thor_pin"][:12],
-                  "data": "experiments/results/fig_radius_solve.json (" + hashlib.sha256(raw).hexdigest()[:12] + ")",
-                  "repo": pin.stdout.strip() or "unknown"}
-    ts.savefig(fig, OUT_PDF, provenance=provenance, formats=("pdf",))
+    provenance = {"figure": "thor_paper2/figures/fig_radius_solve.py", "thor": rec["thor_pin"][:12],
+                  "data": "thor_paper2/results/fig_radius_solve.json (" + hashlib.sha256(raw).hexdigest()[:12] + ")",
+                  "experiments": pin.stdout.strip() or "unknown"}
+    ts.savefig(fig, out_pdf, provenance=provenance, formats=("pdf",))
     ts.savefig(fig, OUT_PREVIEW, provenance=provenance, formats=("png",))
-    print(f"wrote {OUT_PDF.with_suffix('.pdf')} and {OUT_PREVIEW.with_suffix('.png')}")
+    print(f"wrote {out_pdf.with_suffix('.pdf')} and {OUT_PREVIEW.with_suffix('.png')}")
     for c in curves:
         w = c["window"]
         print(f"{w['region']} w{w['window']}: {w['density_per_deg2_per_night']:,.0f} /deg2/night, "
