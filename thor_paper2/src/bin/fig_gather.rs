@@ -70,7 +70,7 @@ use sha2::{Digest, Sha256};
 
 use thor::bvh::config::GuardConfig;
 use thor::bvh::filter::{gather_orbit_candidates, GatherFilters};
-use thor::bvh::guard::{build_segment_guards, build_segment_guards_nbody, OrientedGuard};
+use thor::bvh::guard::{build_segment_guards, build_segment_guards_nbody, instant_segment, OrientedGuard};
 use thor::bvh::segments::{observer_arc_days, segments_need_nbody, OrbitSegment};
 use thor::observations::{ObsStore, StringInterner, TrailStore};
 use thor::pipeline::catalog::{parse_dates_arg, ThorObsCatalog};
@@ -501,19 +501,8 @@ fn main() {
         assert!(matches!(eph.state.frame, Frame::Equatorial), "ephemeris frame {:?}", eph.state.frame);
         let (ra, dec, rho) = (eph.state.lon, eph.state.lat, eph.state.rho);
         predicted.insert(*sid, (ra, dec, rho));
-        let d = unit(ra, dec);
-        zero_segments.push(OrbitSegment {
-            orbit_id: 0,
-            seg_id: k as u32,
-            t_start_utc: *t_utc,
-            t_end_utc: *t_utc,
-            dir_start: d,
-            dir_end: d,
-            center_dir: d,
-            rho_min: rho,
-            rho_max: rho,
-            site_pad_rad: 0.0,
-        });
+        // THOR's own instant: a zero-length segment at the predicted direction and range, keyed by exposure.
+        zero_segments.push(OrbitSegment { seg_id: k as u32, ..instant_segment(0, *t_utc, unit(ra, dec), rho) });
     }
     let mut zero_guards = segment_guards(&zero_segments);
     if let Some(cap) = cap_deg {
