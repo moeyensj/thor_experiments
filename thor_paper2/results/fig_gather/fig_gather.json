@@ -79,7 +79,7 @@
   "cpu": "AMD Ryzen Threadripper 2990WX 32-Core Processor",
   "cpus_allowed": "44-59",
   "experiment": "fig_gather",
-  "experiments_commit": "93d9ed8bbd642e55876192387fe0c6e12387a7c7",
+  "experiments_commit": "4ac8a37e6dd270b5da51628429782d5a637fb0b8",
   "experiments_source": "git@github.com:moeyensj/thor_experiments.git",
   "exposures": [
     {
@@ -5733,19 +5733,19 @@
     ],
     "tiling_n_sigma": 3.0
   },
-  "thor_pin": "fe52974801ba01bba61484ad2fe66ddc34d2cf0a",
+  "thor_pin": "939d286ef15663d9b6e5d3e71ca8fd998707c9b0",
   "thor_source": "git@github.com:moeyensj/thor_rust.git",
   "threads": 16,
   "timing": {
-    "compose_store_s": 35.742647076,
-    "labels_s": 0.764582839,
-    "load_assist_s": 1.7129317720000001,
-    "observers_s": 1.943414963,
-    "retrace_s": 0.512688472,
-    "store_scan_s": 0.301750312,
-    "sweep_gather_ms": 31738.0,
-    "sweep_input_s": 31.937725945,
-    "sweep_transform_ms": 136.0,
-    "total_s": 74.223451778
+    "compose_store_s": 30.365057579,
+    "labels_s": 0.73453749,
+    "load_assist_s": 1.653371318,
+    "observers_s": 1.9810238070000001,
+    "retrace_s": 0.521775826,
+    "store_scan_s": 0.313820933,
+    "sweep_gather_ms": 1054.0,
+    "sweep_input_s": 1.25369917,
+    "sweep_transform_ms": 137.0,
+    "total_s": 38.188284757
   }
 }
