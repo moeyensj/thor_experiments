@@ -2,15 +2,15 @@
   "astrometric_floor_arcsec": 1.0,
   "background_solve_windows": [
     {
-      "density_per_deg2_per_night": 3760.763888888888,
-      "e_false_at_dump_radius": 1000.0016347135979,
-      "n_kept": 10831,
+      "density_per_deg2_per_night": 3762.8472222222213,
+      "e_false_at_dump_radius": 1000.0000188336512,
+      "n_kept": 10837,
       "n_nights": 3,
       "n_visits": 12,
       "occupied_area_deg2": 0.9600000000000002,
       "omega_v_deg2_per_day2": 0.0029766229891759633,
-      "radius_dump_arcsec": 8.413519081372995,
-      "region": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_B1000",
+      "radius_dump_arcsec": 8.412307183512755,
+      "region": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -18,13 +18,13 @@
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 8.413519081372995
+        "solved_arcsec": 8.412307183512755
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.0023370886337147206
+          "solved": 0.00233675199542021
         },
-        "radius_arcsec": 8.413519081372995,
+        "radius_arcsec": 8.412307183512755,
         "rounds": 3,
         "settled": true
       },
@@ -33,15 +33,15 @@
       "window_t1_minus_t0_days": 6.080000000001746
     },
     {
-      "density_per_deg2_per_night": 5063.788659793813,
-      "e_false_at_dump_radius": 1000.0011375108991,
-      "n_kept": 39295,
+      "density_per_deg2_per_night": 5028.954081632653,
+      "e_false_at_dump_radius": 999.9997784396515,
+      "n_kept": 39427,
       "n_nights": 2,
       "n_visits": 6,
-      "occupied_area_deg2": 3.880000000000001,
+      "occupied_area_deg2": 3.9200000000000004,
       "omega_v_deg2_per_day2": 0.00361919008261206,
-      "radius_dump_arcsec": 30.28612467002006,
-      "region": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_B1000",
+      "radius_dump_arcsec": 30.248479204385035,
+      "region": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -49,13 +49,13 @@
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 30.28612467002006
+        "solved_arcsec": 30.248479204385035
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.008412812408338907
+          "solved": 0.008402355334551399
         },
-        "radius_arcsec": 30.28612467002006,
+        "radius_arcsec": 30.248479204385035,
         "rounds": 3,
         "settled": true
       },
@@ -72,7 +72,7 @@
       "occupied_area_deg2": 3.6,
       "omega_v_deg2_per_day2": 0.014739739716006813,
       "radius_dump_arcsec": 65.5447705961264,
-      "region": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_B1000",
+      "region": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -103,7 +103,7 @@
       "occupied_area_deg2": 2.9600000000000004,
       "omega_v_deg2_per_day2": 0.012345065951392122,
       "radius_dump_arcsec": 22.045322661071683,
-      "region": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_B1000",
+      "region": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -134,7 +134,7 @@
       "occupied_area_deg2": 3.1200000000000006,
       "omega_v_deg2_per_day2": 0.014810325154717004,
       "radius_dump_arcsec": 39.080039517387036,
-      "region": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_B1000",
+      "region": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -165,7 +165,7 @@
       "occupied_area_deg2": 2.5600000000000005,
       "omega_v_deg2_per_day2": 0.004847510134212495,
       "radius_dump_arcsec": 41.27441108240616,
-      "region": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000",
+      "region": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -196,7 +196,7 @@
       "occupied_area_deg2": 3.9200000000000004,
       "omega_v_deg2_per_day2": 0.0031391976273198526,
       "radius_dump_arcsec": 21.00732333303673,
-      "region": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000",
+      "region": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -227,7 +227,7 @@
       "occupied_area_deg2": 2.5600000000000005,
       "omega_v_deg2_per_day2": 0.003248457622950598,
       "radius_dump_arcsec": 35.52953809674982,
-      "region": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_B1000",
+      "region": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -258,7 +258,7 @@
       "occupied_area_deg2": 3.8000000000000003,
       "omega_v_deg2_per_day2": 0.04312274454916966,
       "radius_dump_arcsec": 28.664970148220423,
-      "region": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_B1000",
+      "region": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -281,37 +281,6 @@
       "window_t1_minus_t0_days": 4.864000000001397
     },
     {
-      "density_per_deg2_per_night": 493.48958333333326,
-      "e_false_at_dump_radius": 0.7873764371983936,
-      "n_kept": 3790,
-      "n_nights": 3,
-      "n_visits": 12,
-      "occupied_area_deg2": 2.5600000000000005,
-      "omega_v_deg2_per_day2": 0.002718656562820203,
-      "radius_dump_arcsec": 9.978805549075645,
-      "region": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_B1000",
-      "relative_mismatch": 5.925419583457641,
-      "reproduced": false,
-      "rule": {
-        "min_nights": 2,
-        "min_obs": 4
-      },
-      "solve": {
-        "solved_arcsec": 69.10741536908425
-      },
-      "tiler_record": {
-        "r2_deg": {
-          "solved": 0.017559005739950194
-        },
-        "radius_arcsec": 9.978805549075645,
-        "rounds": 8,
-        "settled": false
-      },
-      "window": 0,
-      "window_days": 6.079999999998837,
-      "window_t1_minus_t0_days": 6.080000000001746
-    },
-    {
       "density_per_deg2_per_night": 1261.9140624999998,
       "e_false_at_dump_radius": 1000.0000478401313,
       "n_kept": 6461,
@@ -320,7 +289,7 @@
       "occupied_area_deg2": 2.5600000000000005,
       "omega_v_deg2_per_day2": 0.004800987049237343,
       "radius_dump_arcsec": 65.19125454057263,
-      "region": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_B1000",
+      "region": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -343,15 +312,15 @@
       "window_t1_minus_t0_days": 3.1129599999985658
     },
     {
-      "density_per_deg2_per_night": 4771.811224489796,
-      "e_false_at_dump_radius": 999.9989221984214,
-      "n_kept": 37411,
+      "density_per_deg2_per_night": 4718.5,
+      "e_false_at_dump_radius": 1000.0006355080806,
+      "n_kept": 37748,
       "n_nights": 2,
       "n_visits": 4,
-      "occupied_area_deg2": 3.9200000000000004,
+      "occupied_area_deg2": 4.0,
       "omega_v_deg2_per_day2": 0.003491363558783055,
-      "radius_dump_arcsec": 30.392827875801476,
-      "region": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_B1000",
+      "radius_dump_arcsec": 30.37628083580952,
+      "region": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -359,14 +328,14 @@
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 30.392827875801476
+        "solved_arcsec": 30.37628083580952
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.008442452187722632
+          "solved": 0.008437855787724867
         },
-        "radius_arcsec": 30.392827875801476,
-        "rounds": 2,
+        "radius_arcsec": 30.37628083580952,
+        "rounds": 3,
         "settled": true
       },
       "window": 2,
@@ -382,7 +351,7 @@
       "occupied_area_deg2": 3.7600000000000002,
       "omega_v_deg2_per_day2": 0.004760042815655195,
       "radius_dump_arcsec": 125.52336002088266,
-      "region": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_B1000",
+      "region": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.00038391984140464754,
       "reproduced": true,
       "rule": {
@@ -405,15 +374,15 @@
       "window_t1_minus_t0_days": 3.1129599999985658
     },
     {
-      "density_per_deg2_per_night": 5029.974489795918,
-      "e_false_at_dump_radius": 1000.0006132246893,
-      "n_kept": 39435,
+      "density_per_deg2_per_night": 5017.474489795918,
+      "e_false_at_dump_radius": 1000.0009728643527,
+      "n_kept": 39337,
       "n_nights": 2,
       "n_visits": 6,
       "occupied_area_deg2": 3.9200000000000004,
       "omega_v_deg2_per_day2": 0.0033852338376055037,
-      "radius_dump_arcsec": 29.65674804290944,
-      "region": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_B1000",
+      "radius_dump_arcsec": 29.679159071406268,
+      "region": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -421,13 +390,13 @@
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 29.65674804290944
+        "solved_arcsec": 29.679159071406268
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.008237985567474845
+          "solved": 0.008244210853168408
         },
-        "radius_arcsec": 29.65674804290944,
+        "radius_arcsec": 29.679159071406268,
         "rounds": 3,
         "settled": true
       },
@@ -444,7 +413,7 @@
       "occupied_area_deg2": 3.4000000000000004,
       "omega_v_deg2_per_day2": 0.0033639305387478417,
       "radius_dump_arcsec": 20.897819562312527,
-      "region": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_B1000",
+      "region": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -467,15 +436,15 @@
       "window_t1_minus_t0_days": 2.735999999997148
     },
     {
-      "density_per_deg2_per_night": 1430.6902985074626,
-      "e_false_at_dump_radius": 1000.0005635415582,
-      "n_kept": 15337,
+      "density_per_deg2_per_night": 1428.544776119403,
+      "e_false_at_dump_radius": 999.999066677203,
+      "n_kept": 15314,
       "n_nights": 4,
       "n_visits": 16,
       "occupied_area_deg2": 2.68,
       "omega_v_deg2_per_day2": 0.003852591986144359,
-      "radius_dump_arcsec": 19.617718849264527,
-      "region": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_B1000",
+      "radius_dump_arcsec": 19.628301872765235,
+      "region": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -483,13 +452,13 @@
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 19.617718849264527
+        "solved_arcsec": 19.628301872765235
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.005449366347017925
+          "solved": 0.005452306075768121
         },
-        "radius_arcsec": 19.617718849264527,
+        "radius_arcsec": 19.628301872765235,
         "rounds": 3,
         "settled": true
       },
@@ -506,7 +475,7 @@
       "occupied_area_deg2": 2.5200000000000005,
       "omega_v_deg2_per_day2": 0.011180027002028598,
       "radius_dump_arcsec": 25.888012923522698,
-      "region": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_B1000",
+      "region": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -529,15 +498,15 @@
       "window_t1_minus_t0_days": 7.599999999998545
     },
     {
-      "density_per_deg2_per_night": 5347.685185185185,
-      "e_false_at_dump_radius": 1000.000036827214,
-      "n_kept": 23102,
+      "density_per_deg2_per_night": 5348.148148148148,
+      "e_false_at_dump_radius": 999.9990296392043,
+      "n_kept": 23104,
       "n_nights": 3,
       "n_visits": 18,
       "occupied_area_deg2": 1.4400000000000002,
       "omega_v_deg2_per_day2": 0.0010628451791580605,
-      "radius_dump_arcsec": 9.745190234761933,
-      "region": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000",
+      "radius_dump_arcsec": 9.744942002311351,
+      "region": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -545,13 +514,13 @@
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 9.745190234761933
+        "solved_arcsec": 9.744942002311351
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.0027069972874338706
+          "solved": 0.002706928333975375
         },
-        "radius_arcsec": 9.745190234761933,
+        "radius_arcsec": 9.744942002311351,
         "rounds": 4,
         "settled": true
       },
@@ -568,7 +537,7 @@
       "occupied_area_deg2": 1.3200000000000003,
       "omega_v_deg2_per_day2": 0.0009121655833224238,
       "radius_dump_arcsec": 5.7092043025459835,
-      "region": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000",
+      "region": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -599,7 +568,7 @@
       "occupied_area_deg2": 9.920000000000002,
       "omega_v_deg2_per_day2": 0.006227752040501536,
       "radius_dump_arcsec": 66.54592287360376,
-      "region": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_B1000",
+      "region": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -630,7 +599,7 @@
       "occupied_area_deg2": 8.120000000000001,
       "omega_v_deg2_per_day2": 0.005451512389834625,
       "radius_dump_arcsec": 19.974024755624338,
-      "region": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_B1000",
+      "region": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -653,15 +622,15 @@
       "window_t1_minus_t0_days": 1.3740800000014133
     },
     {
-      "density_per_deg2_per_night": 830.2127659574468,
-      "e_false_at_dump_radius": 999.9999342188308,
-      "n_kept": 15608,
+      "density_per_deg2_per_night": 830.1063829787233,
+      "e_false_at_dump_radius": 999.9995029047755,
+      "n_kept": 15606,
       "n_nights": 2,
       "n_visits": 13,
       "occupied_area_deg2": 9.4,
       "omega_v_deg2_per_day2": 0.008833090492080342,
-      "radius_dump_arcsec": 57.013916205986746,
-      "region": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_B1000",
+      "radius_dump_arcsec": 57.014867717099435,
+      "region": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -669,13 +638,13 @@
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 57.013916205986746
+        "solved_arcsec": 57.014867717099435
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.01583719894610743
+          "solved": 0.015837463254749842
         },
-        "radius_arcsec": 57.013916205986746,
+        "radius_arcsec": 57.014867717099435,
         "rounds": 3,
         "settled": true
       },
@@ -692,7 +661,7 @@
       "occupied_area_deg2": 11.72,
       "omega_v_deg2_per_day2": 0.010327261470080333,
       "radius_dump_arcsec": 17.665324526021962,
-      "region": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_B1000",
+      "region": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -723,7 +692,7 @@
       "occupied_area_deg2": 10.200000000000001,
       "omega_v_deg2_per_day2": 0.014490027130811526,
       "radius_dump_arcsec": 51.08808973236751,
-      "region": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_B1000",
+      "region": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -754,7 +723,7 @@
       "occupied_area_deg2": 10.200000000000001,
       "omega_v_deg2_per_day2": 0.010272856851412868,
       "radius_dump_arcsec": 41.51770122556437,
-      "region": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_B1000",
+      "region": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -785,7 +754,7 @@
       "occupied_area_deg2": 1.4400000000000002,
       "omega_v_deg2_per_day2": 0.0006166604120326476,
       "radius_dump_arcsec": 11.734801458525428,
-      "region": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_B1000",
+      "region": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -816,7 +785,7 @@
       "occupied_area_deg2": 1.4000000000000001,
       "omega_v_deg2_per_day2": 0.0005200562280881079,
       "radius_dump_arcsec": 6.749308822269498,
-      "region": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_B1000",
+      "region": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 3.513472195201293e-6,
       "reproduced": true,
       "rule": {
@@ -847,7 +816,7 @@
       "occupied_area_deg2": 9.680000000000001,
       "omega_v_deg2_per_day2": 0.0075157127516931104,
       "radius_dump_arcsec": 36.72196875314994,
-      "region": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_B1000",
+      "region": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -870,29 +839,29 @@
       "window_t1_minus_t0_days": 3.1129599999985658
     },
     {
-      "density_per_deg2_per_night": 5958.854166666665,
-      "e_false_at_dump_radius": 999.9707945020187,
-      "n_kept": 91528,
+      "density_per_deg2_per_night": 5952.083333333332,
+      "e_false_at_dump_radius": 1000.083873191774,
+      "n_kept": 91424,
       "n_nights": 2,
       "n_visits": 7,
       "occupied_area_deg2": 7.6800000000000015,
       "omega_v_deg2_per_day2": 0.006059339065720854,
-      "radius_dump_arcsec": 19.906382635680544,
-      "region": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_B1000",
-      "relative_mismatch": 8.783703635927661e-6,
+      "radius_dump_arcsec": 19.896925443900056,
+      "region": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_S60871.691+7.6_B1000",
+      "relative_mismatch": 0.00002459395972639413,
       "reproduced": true,
       "rule": {
         "min_nights": 2,
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 19.90655748744608
+        "solved_arcsec": 19.89643609971701
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.005529550732133484
+          "solved": 0.005526923734416682
         },
-        "radius_arcsec": 19.906382635680544,
+        "radius_arcsec": 19.896925443900056,
         "rounds": 3,
         "settled": true
       },
@@ -909,7 +878,7 @@
       "occupied_area_deg2": 9.8,
       "omega_v_deg2_per_day2": 0.006641934020166763,
       "radius_dump_arcsec": 36.50165093515148,
-      "region": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_B1000",
+      "region": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -932,15 +901,15 @@
       "window_t1_minus_t0_days": 3.1129599999985658
     },
     {
-      "density_per_deg2_per_night": 6067.012195121951,
-      "e_false_at_dump_radius": 999.9989955211283,
-      "n_kept": 99499,
+      "density_per_deg2_per_night": 6069.085365853658,
+      "e_false_at_dump_radius": 1000.0006218975874,
+      "n_kept": 99533,
       "n_nights": 2,
       "n_visits": 7,
       "occupied_area_deg2": 8.200000000000001,
       "omega_v_deg2_per_day2": 0.005450380171558989,
-      "radius_dump_arcsec": 20.346575550840548,
-      "region": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_B1000",
+      "radius_dump_arcsec": 20.341036062412194,
+      "region": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -948,13 +917,13 @@
         "min_obs": 4
       },
       "solve": {
-        "solved_arcsec": 20.346575550840548
+        "solved_arcsec": 20.341036062412194
       },
       "tiler_record": {
         "r2_deg": {
-          "solved": 0.005651826541900152
+          "solved": 0.005650287795114498
         },
-        "radius_arcsec": 20.346575550840548,
+        "radius_arcsec": 20.341036062412194,
         "rounds": 3,
         "settled": true
       },
@@ -971,7 +940,7 @@
       "occupied_area_deg2": 10.240000000000002,
       "omega_v_deg2_per_day2": 0.015881191074494858,
       "radius_dump_arcsec": 37.73747866957937,
-      "region": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_B1000",
+      "region": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_S60871.691+7.6_B1000",
       "relative_mismatch": 0.000020202633705406517,
       "reproduced": true,
       "rule": {
@@ -1002,7 +971,7 @@
       "occupied_area_deg2": 9.64,
       "omega_v_deg2_per_day2": 0.004128014682279955,
       "radius_dump_arcsec": 16.768505663023568,
-      "region": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000",
+      "region": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -1033,7 +1002,7 @@
       "occupied_area_deg2": 3.9600000000000004,
       "omega_v_deg2_per_day2": 0.003613161578206096,
       "radius_dump_arcsec": 19.147089863425155,
-      "region": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000",
+      "region": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_S60871.691+7.6_B1000",
       "relative_mismatch": 0.0,
       "reproduced": true,
       "rule": {
@@ -1316,7 +1285,7 @@
         "occupied_area_deg2": 10.240000000000002,
         "omega_v_deg2_per_day2": 0.015881191074494858,
         "radius_dump_arcsec": 37.73747866957937,
-        "region": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_B1000",
+        "region": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_S60871.691+7.6_B1000",
         "relative_mismatch": 0.000020202633705406517,
         "reproduced": true,
         "rule": {
@@ -1597,7 +1566,7 @@
         "occupied_area_deg2": 9.64,
         "omega_v_deg2_per_day2": 0.004128014682279955,
         "radius_dump_arcsec": 16.768505663023568,
-        "region": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000",
+        "region": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_S60871.691+7.6_B1000",
         "relative_mismatch": 0.0,
         "reproduced": true,
         "rule": {
@@ -1878,7 +1847,7 @@
         "occupied_area_deg2": 3.9200000000000004,
         "omega_v_deg2_per_day2": 0.0031391976273198526,
         "radius_dump_arcsec": 21.00732333303673,
-        "region": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000",
+        "region": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_S60871.691+7.6_B1000",
         "relative_mismatch": 0.0,
         "reproduced": true,
         "rule": {
@@ -2159,7 +2128,7 @@
         "occupied_area_deg2": 1.3200000000000003,
         "omega_v_deg2_per_day2": 0.0009121655833224238,
         "radius_dump_arcsec": 5.7092043025459835,
-        "region": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000",
+        "region": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_S60871.691+7.6_B1000",
         "relative_mismatch": 0.0,
         "reproduced": true,
         "rule": {
@@ -2184,203 +2153,205 @@
     }
   ],
   "experiment": "fig_radius_solve",
+  "experiments_commit": "fba3d7ae130fb1b6f18b1d6b3df9ada8904fbf09",
+  "experiments_source": "git@github.com:moeyensj/thor_experiments.git",
   "inputs": [
     {
-      "file": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_B1000.json",
-      "sha256": "8cfe60f7b5364a3948b989953d4687b8ded64bc5080b0657148f6464e7c9c7db"
+      "file": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_S60871.691+7.6_B1000.json",
+      "sha256": "dfba14c7e2f13324aaa40c6eb4fee1103fe07815bcceb3dbe493b39d9ff7e266"
     },
     {
-      "file": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_B1000.parquet",
-      "sha256": "86162e9d2295d65b0e56eb925184b683153d420ca83ba3418117fbcc51862ebb"
+      "file": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_S60871.691+7.6_B1000.parquet",
+      "sha256": "79a3d5830a3eff91e307820b789c776ba75a9b73c56ebe07abf9827e07441a06"
     },
     {
-      "file": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_B1000.json",
-      "sha256": "705c84930b477fa364900d6419d2115e9e46cf80c931ea46a90695b947096024"
+      "file": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_S60871.691+7.6_B1000.json",
+      "sha256": "5e6e870fd39ef7be968ec1d8554971cf0528d712d29ecf88c6ac1dd10a79ef06"
     },
     {
-      "file": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_B1000.parquet",
-      "sha256": "4fed7941b0fb7c65483da1867ad6cbc39847ef9e4bec915e406324ad95ce90d1"
+      "file": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_S60871.691+7.6_B1000.parquet",
+      "sha256": "b73431f097dbe1cac50df19d82f5a5e14a3a90438e24597a83001360fe2f3b54"
     },
     {
-      "file": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_B1000.json",
-      "sha256": "1c2831e9573170eae595bc2737c70c0bc254a8f5430d2a74deddcf804e565600"
+      "file": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_S60871.691+7.6_B1000.json",
+      "sha256": "43b2e9dfa7f92bba58833bea58ad9e3085284859b08035022ecf440af18b4bf2"
     },
     {
-      "file": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_B1000.parquet",
-      "sha256": "5a46abb7762ea01d7c98e07a3db3fccf7789aebd85660b00e0e320a54e3fc12e"
+      "file": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_S60871.691+7.6_B1000.parquet",
+      "sha256": "3d0bf4d502424f23def874fe1717f36b286a36f0f51265c981cdd41bec7bd1c5"
     },
     {
-      "file": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_B1000.json",
-      "sha256": "12de264a6ac3874597d4301c9567dcaa48a331124ee7a6eaf677cc1a8a97b8d0"
+      "file": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_S60871.691+7.6_B1000.json",
+      "sha256": "12d57abaa81b47610bdf5c7f39061373a3f09b9ed0c99e8a02d8c47e0306e3cc"
     },
     {
-      "file": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_B1000.parquet",
-      "sha256": "e0f0045a7e5c185ea25ad57c3acaa77fb03f91a1e431c97e8cfa944d1a0b0d67"
+      "file": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_S60871.691+7.6_B1000.parquet",
+      "sha256": "4c44afe6eadbd1f25994dbafcd18c8624b7865ed156c53b22908521c45a69592"
     },
     {
-      "file": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_B1000.json",
-      "sha256": "3b88c4a9f806ac3ccefb1f28d16e7d2d1f109504e323295b92218d217c99e889"
+      "file": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_S60871.691+7.6_B1000.json",
+      "sha256": "d91dc21c7f93ed995994643c4be3af1084567e704efc04f60d63256e0690d8be"
     },
     {
-      "file": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_B1000.parquet",
-      "sha256": "e7115dd6c630f0c80bd9b759032372a9be312b1f08310553c1c5c23ade70859d"
+      "file": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_S60871.691+7.6_B1000.parquet",
+      "sha256": "8e624ca48cabb557fdf5c234a5113018c900b5ed65f2abf165175c332d36a9dc"
     },
     {
-      "file": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000.json",
-      "sha256": "cccffc8ddeac19aa6cc0fecbfcde42462cc157519c9756bb996aba0b94ebdf3f"
+      "file": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_S60871.691+7.6_B1000.json",
+      "sha256": "03a00965001e40a1c4a0632ae54801988776f2cd69bba31e3d9b950708c29aa4"
     },
     {
-      "file": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000.parquet",
-      "sha256": "43a5add50ac29ceee90e7e2805f7c024a4ab6fdd74c089fc52e047e14f370504"
+      "file": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_S60871.691+7.6_B1000.parquet",
+      "sha256": "a97062063ffcd024d73182f7797c77f7fa11fc8c5e3423e2cf5d9aa784755a61"
     },
     {
-      "file": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_B1000.json",
-      "sha256": "29691e7c4333eb7fd89f92e829277ad952af428ab1b8c3e83911040d361df7f3"
+      "file": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_S60871.691+7.6_B1000.json",
+      "sha256": "482aa0f72c3967d3171000b2918eded14144fa692cb57caf72c03de9091dae5d"
     },
     {
-      "file": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_B1000.parquet",
-      "sha256": "6b05d1f745d50e65a0af637f3cf34407733809772f58df204e56572666191101"
+      "file": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_S60871.691+7.6_B1000.parquet",
+      "sha256": "c71e7fd7c1ec9fa1ccd5c6ee8146109d2dbe96e082cfd5db86112245ddcc3030"
     },
     {
-      "file": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_B1000.json",
-      "sha256": "b84b5c9eb7e8a597164928412574aba4f033e1197f3aee76d070acfa7c9b3cdd"
+      "file": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_S60871.691+7.6_B1000.json",
+      "sha256": "d7d0557afb16ae1f9f5ed002e949feb748f24ec3dd159b555e7283ed0b3e69d9"
     },
     {
-      "file": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_B1000.parquet",
-      "sha256": "23f1b8ff1870bcb869f9eeb84cd84eeffe0a00f34523eb00b2c1fefd08901d12"
+      "file": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_S60871.691+7.6_B1000.parquet",
+      "sha256": "2d2b3f2dab95af4cd302e53c2c08cd8f2cc147978a119ea67096ead52d7436fa"
     },
     {
-      "file": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_B1000.json",
-      "sha256": "685ce47cd808b873ceb2778103fbe009409b43214df1803f05c64a328e9c536d"
+      "file": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_S60871.691+7.6_B1000.json",
+      "sha256": "08b712a7eb223b817555e4e16d3dde1eb0d71fcc98e74e070c2c98a17712d12d"
     },
     {
-      "file": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_B1000.parquet",
-      "sha256": "6badefdab96b264dee236e7305320f267382c70f89c7f1378dfa2807d68a5de4"
+      "file": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_S60871.691+7.6_B1000.parquet",
+      "sha256": "9cfaf1adadd4b4198b0ed8f9c31b3f1a69b2e4027d3e46df8df5eb27cf63233a"
     },
     {
-      "file": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_B1000.json",
-      "sha256": "45e5566073636bbd8bdc98e6b389b81820681e37ef8217f47ca0b1a2c0fdd0da"
+      "file": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_S60871.691+7.6_B1000.json",
+      "sha256": "81d80a10d18119b95f5ecec8743b05cc40b4326afb51b6d936f823e58645e3de"
     },
     {
-      "file": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_B1000.parquet",
-      "sha256": "5ac4089fb12d53fe853996b86c6fe58116dee8adb4fe3cd4b5ba118d68cd5198"
+      "file": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_S60871.691+7.6_B1000.parquet",
+      "sha256": "b23dd0040930c0a9c45040743f67d8341c4b3c3f9ba019ca768fbaf6fb184692"
     },
     {
-      "file": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_B1000.json",
-      "sha256": "75378d4c26bc6f2336067b985a367b7514707609c0f6c6421fe0578269c0c781"
+      "file": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_S60871.691+7.6_B1000.json",
+      "sha256": "4f300a6ae5ac645438dd80d9c006e0e30d38afba974be9b31593d637da26d11b"
     },
     {
-      "file": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_B1000.parquet",
-      "sha256": "04e6f4d20fc3a29244cc19736ed53de10d242886c419c047e1efe7b602719991"
+      "file": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_S60871.691+7.6_B1000.parquet",
+      "sha256": "8716dd8da0a5a83a6cee95ac3dfcd226c3d0e69d7b8c2e50d0652daf53b27e7d"
     },
     {
-      "file": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_B1000.json",
-      "sha256": "d508400b51f44dbcefa190324708b1eca2e3c42b05b6b14bde1c599da095a3bd"
+      "file": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_S60871.691+7.6_B1000.json",
+      "sha256": "85395fc6e8576c971c9b14302a21ed96af8ed016c15f9e0949e6b63e1a3a25da"
     },
     {
-      "file": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_B1000.parquet",
-      "sha256": "bccf964f707d8416da8c196af7d147743caed1d37c46d67698840f737ddc4b44"
+      "file": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_S60871.691+7.6_B1000.parquet",
+      "sha256": "c71eca0b5eec94ba90011b99c974b44e5d51cf120d6098cfa6161b51acc236ad"
     },
     {
-      "file": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_B1000.json",
-      "sha256": "1bd38bea1ce1a4bb670dc29f40c1e2e458cf71ec5ca3195528961990a5c30216"
+      "file": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_S60871.691+7.6_B1000.json",
+      "sha256": "597f3fd900fe07346f2d7076ec95d100d6288c0b239446f1c3630baad9a87e53"
     },
     {
-      "file": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_B1000.parquet",
-      "sha256": "a91bf75aa14728633c5fdc0c4cc377166284830022040aef286d990049beb146"
+      "file": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_S60871.691+7.6_B1000.parquet",
+      "sha256": "7df57a34eb9fa25a905f9f0b86457c983fc832847ef70afa4ffad62924e18aed"
     },
     {
-      "file": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_B1000.json",
-      "sha256": "589404dbd6e8663754827a92c2bb1d39880c9c5d90faf52260906f7afd566203"
+      "file": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_S60871.691+7.6_B1000.json",
+      "sha256": "51defe64196eab8c4324bb9951696c035b4cbdf6d950e485b3af2af6a822a38a"
     },
     {
-      "file": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_B1000.parquet",
-      "sha256": "971b59f2b7b9a5571d68a2391e8a7596bfcc546f84387bd6b773bca0c530da3d"
+      "file": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_S60871.691+7.6_B1000.parquet",
+      "sha256": "13b164b484063cf0d199be6904716528904f2518d7955e08e65bffcdb4792925"
     },
     {
-      "file": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000.json",
-      "sha256": "ff91e6cd9d5edadd9da9adede3b7b25f4d257dd68a174b70fa5f608b92d24789"
+      "file": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_S60871.691+7.6_B1000.json",
+      "sha256": "6f8649dd083f4ad585b2f815e1141850f4bbfe449deb76cd93f40a9b93cc064d"
     },
     {
-      "file": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000.parquet",
-      "sha256": "da14a98c8342e5d613efce2714340cd6ca7d3f52dac2f43b57d7390f63a0fcc9"
+      "file": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_S60871.691+7.6_B1000.parquet",
+      "sha256": "d18bd9dbcf8f9ccff699f2ce9180c940bed9e0cfae3dbad6e2cb431cec2989f3"
     },
     {
-      "file": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_B1000.json",
-      "sha256": "69017336a69ebefbe1ab1062027021e2c6fdf8b363c16166f5545e2f2853ba93"
+      "file": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_S60871.691+7.6_B1000.json",
+      "sha256": "0e3fc90b798969256441d56c98ed64a670ef53ca5bcafcbe5e704db1c61520fc"
     },
     {
-      "file": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_B1000.parquet",
-      "sha256": "06c5fbd0e3327c473ba8dad710aeac5774f2608f6c4ffe0410fb55b89ace7db2"
+      "file": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_S60871.691+7.6_B1000.parquet",
+      "sha256": "9392a874cecc9884f5f707f04b224ca568834e986f0a51b7e63c1c665555a4f6"
     },
     {
-      "file": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_B1000.json",
-      "sha256": "438caffbe0172e742dbff37b6d0d1f153bf76636b5e6094f031566617164c3de"
+      "file": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_S60871.691+7.6_B1000.json",
+      "sha256": "3d93a53fe16e57de4dea8e03304eb41725033c06745e6add5706e1d7f57a4529"
     },
     {
-      "file": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_B1000.parquet",
-      "sha256": "9a6ad29609d1a92e9dfa77d3442cb25d8297a209f47ab20d1b7aa81152bdbb89"
+      "file": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_S60871.691+7.6_B1000.parquet",
+      "sha256": "3b087c5a9c201040ac258660144b6f1f38e8d28f5e38fe7f9c65b48a6f161fcb"
     },
     {
-      "file": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_B1000.json",
-      "sha256": "1895e5a4cd95b2ccef56967d1234cf005d6a641d6c28a508a5b3c79bc95dfd70"
+      "file": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_S60871.691+7.6_B1000.json",
+      "sha256": "3010c919cbe66a18bbdd772960923822fb3752408bd163ad278d9ae940cfbe78"
     },
     {
-      "file": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_B1000.parquet",
-      "sha256": "3531db5d5694e9d25e8b6f7a831a484c54cde22a4f2678c8dd581923fa385aa6"
+      "file": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_S60871.691+7.6_B1000.parquet",
+      "sha256": "6c977878e43a88167deee10ff3719c72cb5c9f3f449f384f1f31d244d029a34a"
     },
     {
-      "file": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_B1000.json",
-      "sha256": "23de41f06043c3c6c2341d4bbea23074eda172f44109a184cf4c20bf9dde0265"
+      "file": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_S60871.691+7.6_B1000.json",
+      "sha256": "c9854afdf08b5ee4339d0000d01ef2b8e6bc454b94fae81b264464c7d761ccba"
     },
     {
-      "file": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_B1000.parquet",
-      "sha256": "5aa5a8410d2c9f76532cd1b99e801e25ed324ddb8c3efc11a2f7df7f43ae2515"
+      "file": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_S60871.691+7.6_B1000.parquet",
+      "sha256": "fead92121e19fe454cd7652dabc7a0a6f843a7afbec06ed1ec04bf4d2be27955"
     },
     {
-      "file": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_B1000.json",
-      "sha256": "7697341203e807dcef74d44279cd38a25ae9afe07355f5dca494cbeb1bb84f76"
+      "file": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_S60871.691+7.6_B1000.json",
+      "sha256": "1d4d7e1d5f0f8a67c7cffb5a3f367db5845579c763c7daf046f62660bc7320be"
     },
     {
-      "file": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_B1000.parquet",
-      "sha256": "d9e0ab6fec9a24051d5fbbc8768769aeebd690bbc2f025c7c49cb63c8d2b3c58"
+      "file": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_S60871.691+7.6_B1000.parquet",
+      "sha256": "57d5bd533c2fcdfaa9fefe827d01172585a79d92f3ea41e5b10b41351be3c98d"
     },
     {
-      "file": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_B1000.json",
-      "sha256": "105fcc1bc9fa0b05e9363801fd2fc8b87b8b607772a618dd0f99534d659b2052"
+      "file": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_S60871.691+7.6_B1000.json",
+      "sha256": "1a467b739398afb89e0a40b5a1b9083511d150dc0320238ac6f983ce0b33f320"
     },
     {
-      "file": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_B1000.parquet",
-      "sha256": "0710a12ac17dcb7946bd8f9ee615e219964f97fe3c917d9882ef3f7b4d720c92"
+      "file": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_S60871.691+7.6_B1000.parquet",
+      "sha256": "8675c227d1eae1430a0f839d90a231606286ab3ef67ff1a8db91dc7124771317"
     },
     {
-      "file": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_B1000.json",
-      "sha256": "d2f536276ff838d85f8b0ae6890ac6900304d14cfae3a3e00a32c5f6c13a3b21"
+      "file": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_S60871.691+7.6_B1000.json",
+      "sha256": "eb88bad02abb226253030e657baa451d093e0eeb7bc11def3a5f8eeaf6e467fd"
     },
     {
-      "file": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_B1000.parquet",
-      "sha256": "78f6f62dc0868eb4a34ce4188aa29a9f9be10886a69d590c17c081d61e79ff3d"
+      "file": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_S60871.691+7.6_B1000.parquet",
+      "sha256": "ba3eb9313d56fe13cf238f6588d4d7b2bdce93a8f2d20345e26a73647b3d2ccd"
     },
     {
-      "file": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_B1000.json",
-      "sha256": "fba4942244723bb46dd96c68df70eb05ed890759c84b7bf9346ccdcdf9765de8"
+      "file": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_S60871.691+7.6_B1000.json",
+      "sha256": "e3c79f4f2061e852d81695a775874f07aad43c1d59b0002c9776d8d378facfa0"
     },
     {
-      "file": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_B1000.parquet",
-      "sha256": "637d9af9271e7dc4d28b948277b739459fbb91920b5575b2f4e580c78d674e23"
+      "file": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_S60871.691+7.6_B1000.parquet",
+      "sha256": "8e6a4af15215e96cd9ffbe2260952d458c4a461e749a7b3f388f4e8317c39c1f"
     },
     {
-      "file": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000.json",
-      "sha256": "9e16b89d22bc68a9f6b719c1ce645874c4b90921844ff3a00c71ef48806bf6e0"
+      "file": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_S60871.691+7.6_B1000.json",
+      "sha256": "d7505e1a3208f48439714867d49bfdcacc87bf3157a31e41479e5789e3f9391f"
     },
     {
-      "file": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000.parquet",
-      "sha256": "3f4fce51585f7077f0b109e756a1d321d545d4f9c820b918bc5e41890cd4010a"
+      "file": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_S60871.691+7.6_B1000.parquet",
+      "sha256": "caa7cbfa8f7bd77dc6284db025dcb6e208696955eb94bd7f41dd68fa10e91b5d"
     },
     {
       "file": "f7962.json",
       "role": "tiler record",
-      "sha256": "29151ed5e4770e46560982d39a2df1f30f2d8bc7ec2bf4dc952a4dd88fd6cd60"
+      "sha256": "ba1c7ff02e5bb1b68c5f775b3b10acd7eb7311fc353836d51f720fca0bdafc79"
     }
   ],
   "model": "thor::clustering::background: WindowBackground::from_detections over the kept detections, e_false and solve_radii at the window's rule, h = infinity (H_eff = Omega_v W^2 / R^2), W = the rung's window_days",
@@ -2633,7 +2604,7 @@
   "summary": {
     "background_solve_radius_arcsec_max": 125.52336002088266,
     "background_solve_radius_arcsec_min": 5.7092043025459835,
-    "background_solve_windows": 34,
+    "background_solve_windows": 33,
     "drawn_density_max": 34057.57575757575,
     "drawn_density_min": 244.49869791666663,
     "drawn_slope_max": 3.728487977167916,
@@ -2641,21 +2612,17 @@
     "drawn_solved_radius_arcsec_max": 37.738241066037894,
     "drawn_solved_radius_arcsec_min": 5.7092043025459835,
     "max_relative_mismatch_reproduced": 0.00038391984140464754,
-    "not_reproduced": [
-      {
-        "region": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_B1000",
-        "window": 0
-      }
-    ],
+    "not_reproduced": [],
     "regions": 24,
     "reproduced": 33,
     "windows_by_radius_set_by": {
-      "background_solve": 34,
+      "background_solve": 33,
       "claim_ceiling": 4,
       "drift_no_ceiling": 13,
-      "no_background": 2
+      "no_background": 2,
+      "sweep_filter_bisected": 1
     }
   },
-  "thor_pin": "a1aceeac62010e287dc6caadb81fa22fa7a2beb8",
+  "thor_pin": "939d286ef15663d9b6e5d3e71ca8fd998707c9b0",
   "thor_source": "git@github.com:moeyensj/thor_rust.git"
 }
