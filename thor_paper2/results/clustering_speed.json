@@ -1,0 +1,1394 @@
+{
+  "cpu": "AMD Ryzen Threadripper 2990WX 32-Core Processor",
+  "envelope_n_sigma": 3.0,
+  "experiment": "clustering_speed",
+  "inputs": [
+    {
+      "file": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_B1000.json",
+      "sha256": "8cfe60f7b5364a3948b989953d4687b8ded64bc5080b0657148f6464e7c9c7db"
+    },
+    {
+      "file": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_B1000.parquet",
+      "sha256": "86162e9d2295d65b0e56eb925184b683153d420ca83ba3418117fbcc51862ebb"
+    },
+    {
+      "file": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_B1000.json",
+      "sha256": "705c84930b477fa364900d6419d2115e9e46cf80c931ea46a90695b947096024"
+    },
+    {
+      "file": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_B1000.parquet",
+      "sha256": "4fed7941b0fb7c65483da1867ad6cbc39847ef9e4bec915e406324ad95ce90d1"
+    },
+    {
+      "file": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_B1000.json",
+      "sha256": "1c2831e9573170eae595bc2737c70c0bc254a8f5430d2a74deddcf804e565600"
+    },
+    {
+      "file": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_B1000.parquet",
+      "sha256": "5a46abb7762ea01d7c98e07a3db3fccf7789aebd85660b00e0e320a54e3fc12e"
+    },
+    {
+      "file": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_B1000.json",
+      "sha256": "12de264a6ac3874597d4301c9567dcaa48a331124ee7a6eaf677cc1a8a97b8d0"
+    },
+    {
+      "file": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_B1000.parquet",
+      "sha256": "e0f0045a7e5c185ea25ad57c3acaa77fb03f91a1e431c97e8cfa944d1a0b0d67"
+    },
+    {
+      "file": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_B1000.json",
+      "sha256": "3b88c4a9f806ac3ccefb1f28d16e7d2d1f109504e323295b92218d217c99e889"
+    },
+    {
+      "file": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_B1000.parquet",
+      "sha256": "e7115dd6c630f0c80bd9b759032372a9be312b1f08310553c1c5c23ade70859d"
+    },
+    {
+      "file": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000.json",
+      "sha256": "cccffc8ddeac19aa6cc0fecbfcde42462cc157519c9756bb996aba0b94ebdf3f"
+    },
+    {
+      "file": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000.parquet",
+      "sha256": "43a5add50ac29ceee90e7e2805f7c024a4ab6fdd74c089fc52e047e14f370504"
+    },
+    {
+      "file": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_B1000.json",
+      "sha256": "29691e7c4333eb7fd89f92e829277ad952af428ab1b8c3e83911040d361df7f3"
+    },
+    {
+      "file": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_B1000.parquet",
+      "sha256": "6b05d1f745d50e65a0af637f3cf34407733809772f58df204e56572666191101"
+    },
+    {
+      "file": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_B1000.json",
+      "sha256": "b84b5c9eb7e8a597164928412574aba4f033e1197f3aee76d070acfa7c9b3cdd"
+    },
+    {
+      "file": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_B1000.parquet",
+      "sha256": "23f1b8ff1870bcb869f9eeb84cd84eeffe0a00f34523eb00b2c1fefd08901d12"
+    },
+    {
+      "file": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_B1000.json",
+      "sha256": "685ce47cd808b873ceb2778103fbe009409b43214df1803f05c64a328e9c536d"
+    },
+    {
+      "file": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_B1000.parquet",
+      "sha256": "6badefdab96b264dee236e7305320f267382c70f89c7f1378dfa2807d68a5de4"
+    },
+    {
+      "file": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_B1000.json",
+      "sha256": "45e5566073636bbd8bdc98e6b389b81820681e37ef8217f47ca0b1a2c0fdd0da"
+    },
+    {
+      "file": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_B1000.parquet",
+      "sha256": "5ac4089fb12d53fe853996b86c6fe58116dee8adb4fe3cd4b5ba118d68cd5198"
+    },
+    {
+      "file": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_B1000.json",
+      "sha256": "75378d4c26bc6f2336067b985a367b7514707609c0f6c6421fe0578269c0c781"
+    },
+    {
+      "file": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_B1000.parquet",
+      "sha256": "04e6f4d20fc3a29244cc19736ed53de10d242886c419c047e1efe7b602719991"
+    },
+    {
+      "file": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_B1000.json",
+      "sha256": "d508400b51f44dbcefa190324708b1eca2e3c42b05b6b14bde1c599da095a3bd"
+    },
+    {
+      "file": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_B1000.parquet",
+      "sha256": "bccf964f707d8416da8c196af7d147743caed1d37c46d67698840f737ddc4b44"
+    },
+    {
+      "file": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_B1000.json",
+      "sha256": "1bd38bea1ce1a4bb670dc29f40c1e2e458cf71ec5ca3195528961990a5c30216"
+    },
+    {
+      "file": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_B1000.parquet",
+      "sha256": "a91bf75aa14728633c5fdc0c4cc377166284830022040aef286d990049beb146"
+    },
+    {
+      "file": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_B1000.json",
+      "sha256": "589404dbd6e8663754827a92c2bb1d39880c9c5d90faf52260906f7afd566203"
+    },
+    {
+      "file": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_B1000.parquet",
+      "sha256": "971b59f2b7b9a5571d68a2391e8a7596bfcc546f84387bd6b773bca0c530da3d"
+    },
+    {
+      "file": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000.json",
+      "sha256": "ff91e6cd9d5edadd9da9adede3b7b25f4d257dd68a174b70fa5f608b92d24789"
+    },
+    {
+      "file": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000.parquet",
+      "sha256": "da14a98c8342e5d613efce2714340cd6ca7d3f52dac2f43b57d7390f63a0fcc9"
+    },
+    {
+      "file": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_B1000.json",
+      "sha256": "69017336a69ebefbe1ab1062027021e2c6fdf8b363c16166f5545e2f2853ba93"
+    },
+    {
+      "file": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_B1000.parquet",
+      "sha256": "06c5fbd0e3327c473ba8dad710aeac5774f2608f6c4ffe0410fb55b89ace7db2"
+    },
+    {
+      "file": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_B1000.json",
+      "sha256": "438caffbe0172e742dbff37b6d0d1f153bf76636b5e6094f031566617164c3de"
+    },
+    {
+      "file": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_B1000.parquet",
+      "sha256": "9a6ad29609d1a92e9dfa77d3442cb25d8297a209f47ab20d1b7aa81152bdbb89"
+    },
+    {
+      "file": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_B1000.json",
+      "sha256": "1895e5a4cd95b2ccef56967d1234cf005d6a641d6c28a508a5b3c79bc95dfd70"
+    },
+    {
+      "file": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_B1000.parquet",
+      "sha256": "3531db5d5694e9d25e8b6f7a831a484c54cde22a4f2678c8dd581923fa385aa6"
+    },
+    {
+      "file": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_B1000.json",
+      "sha256": "23de41f06043c3c6c2341d4bbea23074eda172f44109a184cf4c20bf9dde0265"
+    },
+    {
+      "file": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_B1000.parquet",
+      "sha256": "5aa5a8410d2c9f76532cd1b99e801e25ed324ddb8c3efc11a2f7df7f43ae2515"
+    },
+    {
+      "file": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_B1000.json",
+      "sha256": "7697341203e807dcef74d44279cd38a25ae9afe07355f5dca494cbeb1bb84f76"
+    },
+    {
+      "file": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_B1000.parquet",
+      "sha256": "d9e0ab6fec9a24051d5fbbc8768769aeebd690bbc2f025c7c49cb63c8d2b3c58"
+    },
+    {
+      "file": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_B1000.json",
+      "sha256": "105fcc1bc9fa0b05e9363801fd2fc8b87b8b607772a618dd0f99534d659b2052"
+    },
+    {
+      "file": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_B1000.parquet",
+      "sha256": "0710a12ac17dcb7946bd8f9ee615e219964f97fe3c917d9882ef3f7b4d720c92"
+    },
+    {
+      "file": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_B1000.json",
+      "sha256": "d2f536276ff838d85f8b0ae6890ac6900304d14cfae3a3e00a32c5f6c13a3b21"
+    },
+    {
+      "file": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_B1000.parquet",
+      "sha256": "78f6f62dc0868eb4a34ce4188aa29a9f9be10886a69d590c17c081d61e79ff3d"
+    },
+    {
+      "file": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_B1000.json",
+      "sha256": "fba4942244723bb46dd96c68df70eb05ed890759c84b7bf9346ccdcdf9765de8"
+    },
+    {
+      "file": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_B1000.parquet",
+      "sha256": "637d9af9271e7dc4d28b948277b739459fbb91920b5575b2f4e580c78d674e23"
+    },
+    {
+      "file": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000.json",
+      "sha256": "9e16b89d22bc68a9f6b719c1ce645874c4b90921844ff3a00c71ef48806bf6e0"
+    },
+    {
+      "file": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000.parquet",
+      "sha256": "3f4fce51585f7077f0b109e756a1d321d545d4f9c820b918bc5e41890cd4010a"
+    }
+  ],
+  "reps": 3,
+  "step": "R / W",
+  "summary": {
+    "dbscan_median_s": 0.9096773115,
+    "dbscan_to_hotspot2d_clusters_median": 12.161527967257845,
+    "hotspot2d_median_s": 0.091085493,
+    "regions": 24,
+    "speedup_max": 40.43077683972287,
+    "speedup_median": 9.79586765885248,
+    "speedup_min": 3.8489250613016797,
+    "windows": 38
+  },
+  "thor_pin": "a1aceeac62010e287dc6caadb81fa22fa7a2beb8",
+  "thor_source": "git@github.com:moeyensj/thor_rust.git",
+  "threads": 16,
+  "windows": [
+    {
+      "dbscan": {
+        "clusters": 55809,
+        "distinct_sets": 26762,
+        "median_s": 2.063946394,
+        "wall_s": [
+          1.948648103,
+          2.172008099,
+          2.063946394
+        ]
+      },
+      "detections": 10831,
+      "hotspot2d": {
+        "clusters": 3895,
+        "distinct_sets": 2764,
+        "median_s": 0.281301848,
+        "wall_s": [
+          0.288762933,
+          0.274486413,
+          0.281301848
+        ]
+      },
+      "hypotheses": 19517,
+      "radius_arcsec": 8.413519081372995,
+      "region": "p31848_n64_d19_r0.49881_v-0.00344_a-0.001830_o+0.009338_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 7.337123480255272,
+      "window": 0,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 1567,
+        "distinct_sets": 1567,
+        "median_s": 0.238375332,
+        "wall_s": [
+          0.238375332,
+          0.238320382,
+          0.241616374
+        ]
+      },
+      "detections": 7566,
+      "hotspot2d": {
+        "clusters": 368,
+        "distinct_sets": 368,
+        "median_s": 0.005895888,
+        "wall_s": [
+          0.005778327,
+          0.006020777,
+          0.005895888
+        ]
+      },
+      "hypotheses": 29,
+      "radius_arcsec": 143.18196503769636,
+      "region": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 40.43077683972287,
+      "window": 1,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 7229,
+        "distinct_sets": 5711,
+        "median_s": 0.974280703,
+        "wall_s": [
+          0.946487271,
+          1.004265449,
+          0.974280703
+        ]
+      },
+      "detections": 39295,
+      "hotspot2d": {
+        "clusters": 505,
+        "distinct_sets": 483,
+        "median_s": 0.103608799,
+        "wall_s": [
+          0.103608799,
+          0.107261531,
+          0.074221161
+        ]
+      },
+      "hypotheses": 473,
+      "radius_arcsec": 30.28612467002006,
+      "region": "p31848_n64_d20_r0.45247_v+0.01500_a+0.000458_o+0.001401_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 9.403455231635299,
+      "window": 2,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 14295,
+        "distinct_sets": 11307,
+        "median_s": 0.365255112,
+        "wall_s": [
+          0.380456859,
+          0.365255112,
+          0.363748875
+        ]
+      },
+      "detections": 8180,
+      "hotspot2d": {
+        "clusters": 1660,
+        "distinct_sets": 1405,
+        "median_s": 0.030909264,
+        "wall_s": [
+          0.029378658,
+          0.032472781,
+          0.030909264
+        ]
+      },
+      "hypotheses": 1141,
+      "radius_arcsec": 65.5447705961264,
+      "region": "p31848_n64_d21_r0.45247_v-0.01188_a-0.006405_o+0.011205_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 11.817010977679702,
+      "window": 0,
+      "window_days": 4.86399999999907
+    },
+    {
+      "dbscan": {
+        "clusters": 40205,
+        "distinct_sets": 16375,
+        "median_s": 0.993744165,
+        "wall_s": [
+          0.980261902,
+          0.993744165,
+          0.994855053
+        ]
+      },
+      "detections": 8530,
+      "hotspot2d": {
+        "clusters": 5146,
+        "distinct_sets": 3032,
+        "median_s": 0.154138611,
+        "wall_s": [
+          0.15483123,
+          0.154138611,
+          0.151980276
+        ]
+      },
+      "hypotheses": 12755,
+      "radius_arcsec": 22.045322661071683,
+      "region": "p31848_n64_d21_r0.47508_v-0.00875_a-0.005490_o+0.005602_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 6.447081354586748,
+      "window": 0,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 28568,
+        "distinct_sets": 16502,
+        "median_s": 0.387340336,
+        "wall_s": [
+          0.387340336,
+          0.386496798,
+          0.387409916
+        ]
+      },
+      "detections": 6856,
+      "hotspot2d": {
+        "clusters": 2507,
+        "distinct_sets": 1886,
+        "median_s": 0.044780674,
+        "wall_s": [
+          0.044780674,
+          0.045294083,
+          0.044531395
+        ]
+      },
+      "hypotheses": 3139,
+      "radius_arcsec": 39.080039517387036,
+      "region": "p31848_n64_d22_r0.32166_v-0.00750_a-0.003203_o+0.004669_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 8.649720993480358,
+      "window": 0,
+      "window_days": 4.86399999999907
+    },
+    {
+      "dbscan": {
+        "clusters": 19542,
+        "distinct_sets": 14076,
+        "median_s": 0.221641759,
+        "wall_s": [
+          0.221641759,
+          0.219216084,
+          0.244350911
+        ]
+      },
+      "detections": 6757,
+      "hotspot2d": {
+        "clusters": 1850,
+        "distinct_sets": 1603,
+        "median_s": 0.021496355,
+        "wall_s": [
+          0.021496355,
+          0.020945485,
+          0.022559842
+        ]
+      },
+      "hypotheses": 1155,
+      "radius_arcsec": 41.27441108240616,
+      "region": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 10.310667040993692,
+      "window": 0,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 7996,
+        "distinct_sets": 2375,
+        "median_s": 2.127945881,
+        "wall_s": [
+          2.105858236,
+          2.127945881,
+          2.143521412
+        ]
+      },
+      "detections": 30981,
+      "hotspot2d": {
+        "clusters": 734,
+        "distinct_sets": 387,
+        "median_s": 0.205305804,
+        "wall_s": [
+          0.242159175,
+          0.205305804,
+          0.204555566
+        ]
+      },
+      "hypotheses": 3263,
+      "radius_arcsec": 21.00732333303673,
+      "region": "p31848_n64_d23_r0.44158_v+0.00938_a-0.000458_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 10.364762415581783,
+      "window": 1,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 19959,
+        "distinct_sets": 13693,
+        "median_s": 0.149678182,
+        "wall_s": [
+          0.152447897,
+          0.149678182,
+          0.149490073
+        ]
+      },
+      "detections": 6626,
+      "hotspot2d": {
+        "clusters": 1770,
+        "distinct_sets": 1422,
+        "median_s": 0.019659128,
+        "wall_s": [
+          0.01892812,
+          0.019659128,
+          0.019849868
+        ]
+      },
+      "hypotheses": 1313,
+      "radius_arcsec": 35.52953809674982,
+      "region": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 7.613673505762819,
+      "window": 0,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 0,
+        "distinct_sets": 0,
+        "median_s": 1.918721293,
+        "wall_s": [
+          1.918721293,
+          1.8970835209999999,
+          1.920140076
+        ]
+      },
+      "detections": 34447,
+      "hotspot2d": {
+        "clusters": 0,
+        "distinct_sets": 0,
+        "median_s": 0.138258386,
+        "wall_s": [
+          0.138258386,
+          0.138860726,
+          0.133378247
+        ]
+      },
+      "hypotheses": 1891,
+      "radius_arcsec": 31.26057350289418,
+      "region": "p31848_n64_d24_r0.46364_v-0.01031_a-0.004575_o+0.001401_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 13.877793228397731,
+      "window": 1,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 40410,
+        "distinct_sets": 22981,
+        "median_s": 0.768360944,
+        "wall_s": [
+          0.768360944,
+          0.766925138,
+          0.790902358
+        ]
+      },
+      "detections": 5212,
+      "hotspot2d": {
+        "clusters": 2596,
+        "distinct_sets": 1955,
+        "median_s": 0.111366315,
+        "wall_s": [
+          0.114159908,
+          0.111366315,
+          0.110650266
+        ]
+      },
+      "hypotheses": 15879,
+      "radius_arcsec": 28.664970148220423,
+      "region": "p31849_n64_d20_r0.35460_v-0.00187_a-0.007320_o+0.010271_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 6.899401708676453,
+      "window": 0,
+      "window_days": 4.86399999999907
+    },
+    {
+      "dbscan": {
+        "clusters": 653,
+        "distinct_sets": 223,
+        "median_s": 0.270180229,
+        "wall_s": [
+          0.270180229,
+          0.268493162,
+          0.271274586
+        ]
+      },
+      "detections": 3790,
+      "hotspot2d": {
+        "clusters": 75,
+        "distinct_sets": 52,
+        "median_s": 0.070196282,
+        "wall_s": [
+          0.076852727,
+          0.070196282,
+          0.069933672
+        ]
+      },
+      "hypotheses": 13855,
+      "radius_arcsec": 9.978805549075645,
+      "region": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 3.8489250613016797,
+      "window": 0,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 1338,
+        "distinct_sets": 836,
+        "median_s": 1.221768659,
+        "wall_s": [
+          1.2425997149999999,
+          1.221768659,
+          1.192539082
+        ]
+      },
+      "detections": 30251,
+      "hotspot2d": {
+        "clusters": 141,
+        "distinct_sets": 119,
+        "median_s": 0.056612961,
+        "wall_s": [
+          0.05685046,
+          0.055893681,
+          0.056612961
+        ]
+      },
+      "hypotheses": 665,
+      "radius_arcsec": 48.20504491367165,
+      "region": "p31849_n64_d24_r0.52373_v-0.01156_a-0.005490_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 21.58107679617747,
+      "window": 1,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 5055,
+        "distinct_sets": 4628,
+        "median_s": 0.13275075,
+        "wall_s": [
+          0.13275075,
+          0.134079557,
+          0.11862197
+        ]
+      },
+      "detections": 6461,
+      "hotspot2d": {
+        "clusters": 769,
+        "distinct_sets": 670,
+        "median_s": 0.012106974,
+        "wall_s": [
+          0.012106974,
+          0.012034964,
+          0.012496744
+        ]
+      },
+      "hypotheses": 137,
+      "radius_arcsec": 65.19125454057263,
+      "region": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 10.964816642044495,
+      "window": 1,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 5669,
+        "distinct_sets": 4487,
+        "median_s": 0.908017965,
+        "wall_s": [
+          0.918136512,
+          0.872638319,
+          0.908017965
+        ]
+      },
+      "detections": 37411,
+      "hotspot2d": {
+        "clusters": 370,
+        "distinct_sets": 345,
+        "median_s": 0.092295425,
+        "wall_s": [
+          0.092295425,
+          0.094674041,
+          0.072788807
+        ]
+      },
+      "hypotheses": 453,
+      "radius_arcsec": 30.392827875801476,
+      "region": "p31850_n64_d18_r0.41044_v+0.01000_a+0.003203_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 9.83816873913306,
+      "window": 2,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 1860,
+        "distinct_sets": 1860,
+        "median_s": 0.193507532,
+        "wall_s": [
+          0.195317248,
+          0.193507532,
+          0.192552564
+        ]
+      },
+      "detections": 8160,
+      "hotspot2d": {
+        "clusters": 541,
+        "distinct_sets": 541,
+        "median_s": 0.007532174,
+        "wall_s": [
+          0.011577815,
+          0.007532174,
+          0.007505804
+        ]
+      },
+      "hypotheses": 37,
+      "radius_arcsec": 125.52336002088266,
+      "region": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 25.69079418505202,
+      "window": 1,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 5485,
+        "distinct_sets": 4282,
+        "median_s": 0.912000889,
+        "wall_s": [
+          0.896267311,
+          1.000484432,
+          0.912000889
+        ]
+      },
+      "detections": 39435,
+      "hotspot2d": {
+        "clusters": 398,
+        "distinct_sets": 377,
+        "median_s": 0.07577829,
+        "wall_s": [
+          0.093860442,
+          0.07577829,
+          0.07102673
+        ]
+      },
+      "hypotheses": 467,
+      "radius_arcsec": 29.65674804290944,
+      "region": "p31850_n64_d19_r0.45247_v+0.01250_a+0.001830_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 12.035120995736378,
+      "window": 2,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 981,
+        "distinct_sets": 898,
+        "median_s": 0.427151261,
+        "wall_s": [
+          0.444311584,
+          0.427151261,
+          0.420711585
+        ]
+      },
+      "detections": 10244,
+      "hotspot2d": {
+        "clusters": 89,
+        "distinct_sets": 87,
+        "median_s": 0.017431933,
+        "wall_s": [
+          0.021033386,
+          0.017431933,
+          0.015306298
+        ]
+      },
+      "hypotheses": 175,
+      "radius_arcsec": 92.93274640215773,
+      "region": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 24.503952659753796,
+      "window": 0,
+      "window_days": 4.86399999999907
+    },
+    {
+      "dbscan": {
+        "clusters": 17015,
+        "distinct_sets": 11342,
+        "median_s": 1.172502823,
+        "wall_s": [
+          1.163266482,
+          1.172502823,
+          1.181585715
+        ]
+      },
+      "detections": 23957,
+      "hotspot2d": {
+        "clusters": 1301,
+        "distinct_sets": 1072,
+        "median_s": 0.111273665,
+        "wall_s": [
+          0.116934234,
+          0.110670257,
+          0.111273665
+        ]
+      },
+      "hypotheses": 2319,
+      "radius_arcsec": 20.897819562312527,
+      "region": "p31850_n64_d22_r0.46364_v+0.01125_a-0.001373_o+0.000934_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 10.537109773458079,
+      "window": 1,
+      "window_days": 4.86399999999907
+    },
+    {
+      "dbscan": {
+        "clusters": 20041,
+        "distinct_sets": 7942,
+        "median_s": 1.420476476,
+        "wall_s": [
+          1.404472788,
+          1.420476476,
+          1.430298726
+        ]
+      },
+      "detections": 15337,
+      "hotspot2d": {
+        "clusters": 1151,
+        "distinct_sets": 784,
+        "median_s": 0.167706997,
+        "wall_s": [
+          0.169022455,
+          0.165599282,
+          0.167706997
+        ]
+      },
+      "hypotheses": 7223,
+      "radius_arcsec": 19.617718849264527,
+      "region": "p31850_n64_d24_r0.41044_v+0.00031_a-0.002745_o+0.002801_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 8.469989335030547,
+      "window": 0,
+      "window_days": 7.599999999998545
+    },
+    {
+      "dbscan": {
+        "clusters": 23507,
+        "distinct_sets": 9445,
+        "median_s": 0.911336658,
+        "wall_s": [
+          0.844612317,
+          0.911336658,
+          0.912048517
+        ]
+      },
+      "detections": 7443,
+      "hotspot2d": {
+        "clusters": 1542,
+        "distinct_sets": 963,
+        "median_s": 0.131243454,
+        "wall_s": [
+          0.140822274,
+          0.130559216,
+          0.131243454
+        ]
+      },
+      "hypotheses": 12023,
+      "radius_arcsec": 25.888012923522698,
+      "region": "p31851_n64_d21_r0.47508_v-0.00094_a-0.003660_o+0.002801_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 6.943863714528573,
+      "window": 0,
+      "window_days": 7.599999999998545
+    },
+    {
+      "dbscan": {
+        "clusters": 44572,
+        "distinct_sets": 22074,
+        "median_s": 1.843856725,
+        "wall_s": [
+          1.843856725,
+          1.8371066219999999,
+          1.883292257
+        ]
+      },
+      "detections": 23102,
+      "hotspot2d": {
+        "clusters": 3665,
+        "distinct_sets": 2399,
+        "median_s": 0.218005852,
+        "wall_s": [
+          0.222713083,
+          0.211615946,
+          0.218005852
+        ]
+      },
+      "hypotheses": 5063,
+      "radius_arcsec": 9.745190234761933,
+      "region": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 8.457831329225051,
+      "window": 0,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 8932,
+        "distinct_sets": 2010,
+        "median_s": 41.84373071,
+        "wall_s": [
+          41.632233862,
+          41.84373071,
+          42.164895711
+        ]
+      },
+      "detections": 89912,
+      "hotspot2d": {
+        "clusters": 477,
+        "distinct_sets": 219,
+        "median_s": 4.479717376,
+        "wall_s": [
+          4.580652909,
+          4.458561198,
+          4.479717376
+        ]
+      },
+      "hypotheses": 13219,
+      "radius_arcsec": 5.7092043025459835,
+      "region": "p7962_n32_d19_r0.59160_v+0.01625_a+0.000000_o+0.000934_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 9.34070772727248,
+      "window": 1,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 9051,
+        "distinct_sets": 8522,
+        "median_s": 0.672308027,
+        "wall_s": [
+          0.672308027,
+          0.662972106,
+          0.681874228
+        ]
+      },
+      "detections": 22234,
+      "hotspot2d": {
+        "clusters": 681,
+        "distinct_sets": 624,
+        "median_s": 0.055734618,
+        "wall_s": [
+          0.061692976,
+          0.041983485,
+          0.055734618
+        ]
+      },
+      "hypotheses": 177,
+      "radius_arcsec": 66.54592287360376,
+      "region": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 12.062665020867282,
+      "window": 1,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 11665,
+        "distinct_sets": 7156,
+        "median_s": 8.919025811000001,
+        "wall_s": [
+          8.989781526,
+          7.78862477,
+          8.919025811000001
+        ]
+      },
+      "detections": 97710,
+      "hotspot2d": {
+        "clusters": 777,
+        "distinct_sets": 666,
+        "median_s": 0.595880472,
+        "wall_s": [
+          0.610026513,
+          0.590809602,
+          0.595880472
+        ]
+      },
+      "hypotheses": 1691,
+      "radius_arcsec": 19.974024755624338,
+      "region": "p7962_n32_d20_r0.49881_v+0.00438_a+0.000915_o+0.001401_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 14.967810207077905,
+      "window": 2,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 10252,
+        "distinct_sets": 9133,
+        "median_s": 0.364938241,
+        "wall_s": [
+          0.364324152,
+          0.364938241,
+          0.388961083
+        ]
+      },
+      "detections": 15608,
+      "hotspot2d": {
+        "clusters": 671,
+        "distinct_sets": 595,
+        "median_s": 0.035886858,
+        "wall_s": [
+          0.051049938,
+          0.03474106,
+          0.035886858
+        ]
+      },
+      "hypotheses": 345,
+      "radius_arcsec": 57.013916205986746,
+      "region": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 10.169133252066814,
+      "window": 1,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 39518,
+        "distinct_sets": 20393,
+        "median_s": 5.535230846,
+        "wall_s": [
+          5.422170083,
+          5.695125962,
+          5.535230846
+        ]
+      },
+      "detections": 53042,
+      "hotspot2d": {
+        "clusters": 3871,
+        "distinct_sets": 3027,
+        "median_s": 0.794259124,
+        "wall_s": [
+          0.795006482,
+          0.785953351,
+          0.794259124
+        ]
+      },
+      "hypotheses": 4203,
+      "radius_arcsec": 17.665324526021962,
+      "region": "p7962_n32_d21_r0.30636_v-0.01000_a+0.006863_o+0.000000_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 6.9690491160161985,
+      "window": 2,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 26141,
+        "distinct_sets": 18225,
+        "median_s": 0.446777712,
+        "wall_s": [
+          0.446777712,
+          0.443170489,
+          0.451011014
+        ]
+      },
+      "detections": 12808,
+      "hotspot2d": {
+        "clusters": 3055,
+        "distinct_sets": 2190,
+        "median_s": 0.055647309,
+        "wall_s": [
+          0.07048003,
+          0.054342062,
+          0.055647309
+        ]
+      },
+      "hypotheses": 1939,
+      "radius_arcsec": 51.08808973236751,
+      "region": "p7962_n32_d21_r0.39092_v-0.01875_a+0.003660_o+0.009338_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 8.028738855997512,
+      "window": 0,
+      "window_days": 4.86399999999907
+    },
+    {
+      "dbscan": {
+        "clusters": 19215,
+        "distinct_sets": 13622,
+        "median_s": 0.359584925,
+        "wall_s": [
+          0.353930457,
+          0.359584925,
+          0.364966105
+        ]
+      },
+      "detections": 12058,
+      "hotspot2d": {
+        "clusters": 2136,
+        "distinct_sets": 1749,
+        "median_s": 0.047371006,
+        "wall_s": [
+          0.046279158,
+          0.047371006,
+          0.047603155
+        ]
+      },
+      "hypotheses": 1937,
+      "radius_arcsec": 41.51770122556437,
+      "region": "p7962_n32_d21_r0.47508_v-0.01813_a+0.003660_o+0.014006_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 7.590823065906601,
+      "window": 0,
+      "window_days": 4.86399999999907
+    },
+    {
+      "dbscan": {
+        "clusters": 45606,
+        "distinct_sets": 32376,
+        "median_s": 0.876607268,
+        "wall_s": [
+          0.88062641,
+          0.876607268,
+          0.874654763
+        ]
+      },
+      "detections": 22573,
+      "hotspot2d": {
+        "clusters": 4373,
+        "distinct_sets": 3507,
+        "median_s": 0.089875561,
+        "wall_s": [
+          0.097455186,
+          0.089875561,
+          0.088991673
+        ]
+      },
+      "hypotheses": 1985,
+      "radius_arcsec": 11.734801458525427,
+      "region": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 9.753566578571899,
+      "window": 0,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 9409,
+        "distinct_sets": 2595,
+        "median_s": 15.604721552,
+        "wall_s": [
+          15.544200116,
+          15.604721552,
+          15.896111092
+        ]
+      },
+      "detections": 82085,
+      "hotspot2d": {
+        "clusters": 571,
+        "distinct_sets": 298,
+        "median_s": 1.532110249,
+        "wall_s": [
+          1.509077893,
+          1.532110249,
+          1.547328719
+        ]
+      },
+      "hypotheses": 5289,
+      "radius_arcsec": 6.749308822269498,
+      "region": "p7962_n32_d21_r0.49881_v+0.01625_a+0.000000_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 10.185116614280934,
+      "window": 1,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 11642,
+        "distinct_sets": 9252,
+        "median_s": 0.569597332,
+        "wall_s": [
+          0.565511799,
+          0.591256289,
+          0.569597332
+        ]
+      },
+      "detections": 26935,
+      "hotspot2d": {
+        "clusters": 656,
+        "distinct_sets": 482,
+        "median_s": 0.071896418,
+        "wall_s": [
+          0.075921081,
+          0.071896418,
+          0.068367156
+        ]
+      },
+      "hypotheses": 683,
+      "radius_arcsec": 36.72196875314994,
+      "region": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 7.92247163134052,
+      "window": 1,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 14186,
+        "distinct_sets": 8076,
+        "median_s": 7.734371156,
+        "wall_s": [
+          7.734371156,
+          7.337172686,
+          7.978922664
+        ]
+      },
+      "detections": 91528,
+      "hotspot2d": {
+        "clusters": 1349,
+        "distinct_sets": 1180,
+        "median_s": 0.600233221,
+        "wall_s": [
+          0.600233221,
+          0.593442455,
+          0.600335022
+        ]
+      },
+      "hypotheses": 1875,
+      "radius_arcsec": 19.906382635680544,
+      "region": "p7962_n32_d22_r0.45247_v+0.00938_a-0.000915_o+0.000934_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 12.885609935275475,
+      "window": 2,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 12113,
+        "distinct_sets": 9728,
+        "median_s": 0.56340937,
+        "wall_s": [
+          0.543287209,
+          0.56340937,
+          0.593080982
+        ]
+      },
+      "detections": 27278,
+      "hotspot2d": {
+        "clusters": 834,
+        "distinct_sets": 634,
+        "median_s": 0.074300705,
+        "wall_s": [
+          0.073841696,
+          0.080102424,
+          0.074300705
+        ]
+      },
+      "hypotheses": 613,
+      "radius_arcsec": 36.50165093515148,
+      "region": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 7.582826703999647,
+      "window": 1,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 13805,
+        "distinct_sets": 8075,
+        "median_s": 8.329355857,
+        "wall_s": [
+          8.329355857,
+          8.257796653,
+          8.382976475
+        ]
+      },
+      "detections": 99499,
+      "hotspot2d": {
+        "clusters": 1576,
+        "distinct_sets": 1375,
+        "median_s": 0.613115273,
+        "wall_s": [
+          0.5993737,
+          0.613115273,
+          0.638327934
+        ]
+      },
+      "hypotheses": 1613,
+      "radius_arcsec": 20.346575550840548,
+      "region": "p7962_n32_d22_r0.48680_v+0.00938_a-0.001373_o+0.000467_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 13.585301531054828,
+      "window": 2,
+      "window_days": 3.112959999999405
+    },
+    {
+      "dbscan": {
+        "clusters": 20366,
+        "distinct_sets": 14528,
+        "median_s": 0.336819806,
+        "wall_s": [
+          0.336819806,
+          0.335693738,
+          0.338743812
+        ]
+      },
+      "detections": 7511,
+      "hotspot2d": {
+        "clusters": 1664,
+        "distinct_sets": 1453,
+        "median_s": 0.045340892,
+        "wall_s": [
+          0.056174371,
+          0.044504584,
+          0.045340892
+        ]
+      },
+      "hypotheses": 3683,
+      "radius_arcsec": 37.73747866957937,
+      "region": "p7962_n32_d23_r0.29898_v-0.01562_a+0.006863_o+0.012606_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 7.428610050283086,
+      "window": 0,
+      "window_days": 4.86399999999907
+    },
+    {
+      "dbscan": {
+        "clusters": 23376,
+        "distinct_sets": 10124,
+        "median_s": 3.631618638,
+        "wall_s": [
+          3.639621267,
+          3.631618638,
+          3.627275211
+        ]
+      },
+      "detections": 32386,
+      "hotspot2d": {
+        "clusters": 1388,
+        "distinct_sets": 955,
+        "median_s": 0.579920304,
+        "wall_s": [
+          0.581100762,
+          0.579920304,
+          0.579896194
+        ]
+      },
+      "hypotheses": 6791,
+      "radius_arcsec": 16.768505663023568,
+      "region": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 6.26227192417805,
+      "window": 0,
+      "window_days": 6.079999999998837
+    },
+    {
+      "dbscan": {
+        "clusters": 7027,
+        "distinct_sets": 2024,
+        "median_s": 5.843551681,
+        "wall_s": [
+          5.794449064,
+          5.843551681,
+          6.151382978
+        ]
+      },
+      "detections": 50819,
+      "hotspot2d": {
+        "clusters": 323,
+        "distinct_sets": 215,
+        "median_s": 0.513208376,
+        "wall_s": [
+          0.516426339,
+          0.513208376,
+          0.507820387
+        ]
+      },
+      "hypotheses": 4717,
+      "radius_arcsec": 19.147089863425155,
+      "region": "p7962_n32_d23_r0.48680_v+0.00313_a-0.003203_o+0.003268_B1000",
+      "rule_min_nights": 2,
+      "rule_min_obs": 4,
+      "speedup": 11.38631393069859,
+      "window": 1,
+      "window_days": 6.079999999998837
+    }
+  ]
+}

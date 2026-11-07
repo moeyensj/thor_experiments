@@ -1,0 +1,41 @@
+# Experiments behind the numbers and figures of the THOR 2 papers. Each binary in src/bin reproduces one set of numbers
+# from declared inputs and writes them, stamped with THOR's commit and the inputs' SHA-256, to results/ and generated/.
+#
+# THOR is pinned to the exact commit in thor.rev; ./fetch_thor.sh extracts it into vendor/thor-rs (not committed).
+[package]
+name = "thor_paper2_experiments"
+version = "0.1.0"
+edition = "2021"
+publish = false
+build = "build.rs"
+
+[features]
+# ASSIST, the force-model backend the search runs on (GPL-3.0, via thor-rs-assist), for the experiments that propagate
+# a test orbit (fig_gather requires it). Without the feature this crate is THOR's default build, which is all the
+# clustering experiments need. No empyrean in this crate.
+assist = ["thor-rs/assist"]
+
+[dependencies]
+# THOR's default build unless the assist feature is on.
+thor-rs = { path = "vendor/thor-rs" }
+arrow = { version = "58", default-features = false }
+env_logger = "0.11"
+parquet = { version = "58", default-features = false, features = ["arrow", "snap", "zstd", "lz4"] }
+rayon = "1.11"
+serde_json = "1"
+sha2 = "0.10"
+
+[[bin]]
+name = "fig_gather"
+path = "src/bin/fig_gather.rs"
+required-features = ["assist"]
+
+[profile.release]
+debug = false
+
+# THOR's own patches (vendor/thor-rs/Cargo.toml, [patch.crates-io]): a dependency's patch section does not apply
+# downstream, so the ASSIST build here takes the same vendored copies THOR builds with: libassist-sys 1.2.1 with the
+# finiteness guard on its SPK record lookup, and thor-rs-assist 0.1.0 with its pool and integrator-config changes.
+[patch.crates-io]
+libassist-sys = { path = "vendor/thor-rs/vendor/libassist-sys" }
+thor-rs-assist = { path = "vendor/thor-rs/vendor/thor-rs-assist" }

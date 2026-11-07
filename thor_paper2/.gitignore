@@ -1,0 +1,6 @@
+# Experiment builds: THOR extracted by fetch_thor.sh, and Cargo's output
+target/
+vendor/
+
+# Figure previews (PNG), drawn beside the PDFs the figure scripts write into the paper
+figures/preview/
