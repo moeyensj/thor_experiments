@@ -1,0 +1,2699 @@
+{
+  "code_disagreements": [
+    {
+      "macro": "cnPartialMinObs",
+      "other": {
+        "agrees": false,
+        "source": "THORConfig::default() seed_carryforward.min_obs",
+        "value": 5
+      },
+      "value": 4
+    },
+    {
+      "macro": "cnPartialMinObs",
+      "other": {
+        "agrees": false,
+        "source": "run config seed_carryforward.min_obs",
+        "value": 5
+      },
+      "value": 4
+    },
+    {
+      "macro": "cnPartialMinNights",
+      "other": {
+        "agrees": false,
+        "source": "THORConfig::default() seed_carryforward.min_nights",
+        "value": 3
+      },
+      "value": 2
+    },
+    {
+      "macro": "cnPartialMinNights",
+      "other": {
+        "agrees": false,
+        "source": "run config seed_carryforward.min_nights",
+        "value": 3
+      },
+      "value": 2
+    },
+    {
+      "macro": "cnCarryMaxPasses",
+      "other": {
+        "agrees": false,
+        "source": "run config seed_carryforward.accumulate",
+        "value": null
+      },
+      "value": 64
+    },
+    {
+      "macro": "cnSeedStoreTypeDefault",
+      "other": {
+        "agrees": false,
+        "source": "THORConfig::default() tracklets.max_chain_seeds",
+        "value": 262144
+      },
+      "value": 4096
+    },
+    {
+      "macro": "cnSeedStoreTypeDefault",
+      "other": {
+        "agrees": false,
+        "source": "run config tracklets.max_chain_seeds",
+        "value": 262144
+      },
+      "value": 4096
+    },
+    {
+      "macro": "cnSeedStoreTypeDefault",
+      "other": {
+        "agrees": false,
+        "source": "r07dp2 as run: tracklets.max_chain_seeds after each job's GridContract::apply",
+        "value": [
+          {
+            "count": 110,
+            "value": 262144
+          }
+        ]
+      },
+      "value": 4096
+    },
+    {
+      "macro": "cnRangeRateNodesTypeDefaultWord",
+      "other": {
+        "agrees": false,
+        "source": "2 rdot_half_nodes() + 1 at THORConfig::default() od.range_grid",
+        "value": 27
+      },
+      "value": 7
+    },
+    {
+      "macro": "cnRangeRateNodesTypeDefaultWord",
+      "other": {
+        "agrees": false,
+        "source": "2 rdot_half_nodes() + 1 at the run config",
+        "value": 27
+      },
+      "value": 7
+    }
+  ],
+  "experiment": "constants",
+  "experiments_commit": "2fb7df0d47f9a9fe3cef4595e0db045b25f18a70",
+  "experiments_source": "git@github.com:moeyensj/thor_experiments.git",
+  "inputs": [
+    {
+      "file": "/home/moeyensj/projects/thor/thor-rust-experiments/search/step1/sizing_contract_2026-11-03/gate1/run_side/configs/75104c17511f.json",
+      "role": "run config (r07dp2)",
+      "sha256": "7e213c617080dbe1ae5cbbee646acd37dc6e3341d2ed2e561ebcd41f645da31a"
+    },
+    {
+      "file": "/home/moeyensj/projects/thor/thor-rust-experiments/search/step1/sizing_contract_2026-11-03/gate1/run_side/configs/75104c17511f.json.removed.txt",
+      "role": "fields removed from the job config to make the run config file",
+      "sha256": "d74c1375547c6a77ede4cbbae17cbd775a92b66da19d2d02302ec6e7fed3bdf9"
+    },
+    {
+      "file": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/initial-run-r07dp2/image_ce6e3111.json",
+      "role": "the THOR image the run ran",
+      "sha256": "01f89ccd5e0f5811443daf28d9d795a4440259e222e13f9a7e9c9c64d3175bf0"
+    },
+    {
+      "file": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/initial-run-r07dp2/jobs.json",
+      "role": "r07dp2 jobs",
+      "sha256": "54a03428014272e6e9ec65baf4b127f9d7905e6f752c6faec1bc457ae72a19bb"
+    },
+    {
+      "record": {
+        "config_sha256": "aa51b13846f02d894ba8211333dbfc682034aa42e3521437aaaa6e6eb3e4f2c8",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4340.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "1bc2300d1f81aac9e7a028171e837a72dde31938c6108cfc138a30f07fb10cca",
+        "run_json_sha256": "ef4423aa93fc4735d81ec3da4d631246f6bbba7dd98325c7188e7072953c8cc7",
+        "test_orbit": "f4340n32_r4.0996_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "fdf03152ee4749e4bcea36b926abb8442af9949a2eb284b2d9356cfa344bbce2",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4344.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "a306ffdb9e41705f5925eb2614e37fb2869b211c52aba25149b8ec12bd77f90e",
+        "run_json_sha256": "378c541121d974eeb65a2cfb35169ceacdb837d336f2935593cab7025f5eca31",
+        "test_orbit": "f4344n32_r5.9485_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "96f4d28b0f9e3455e12919c9ad26db698eaca7d824a3c4f54046f8b3374640f5",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4874.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "55e00f3f8404da14ed6c6ade1d3d31a8b154ab59f548046d95d6ac05a2cfbf88",
+        "run_json_sha256": "2d27b9ad8d20e5099debc36a6e6c4f0f20f8304c9f6939441ffd73d482e7feec",
+        "test_orbit": "f4874n32_r5.9550_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "389e06bc657367c6a158be6624357d50a7671345ec21c6ccc84a64fb43e90828",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4663.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "4baf61fc36502083a075df19452d6b5f05c9c324cfd5178ea80d57527af23336",
+        "run_json_sha256": "233f8ced8c19f124abc12924bac5c6551196480160505e533ade0cddc25887ec",
+        "test_orbit": "f4663n32_r6.0762_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "dfed95b7f1adf6c99bb01f8163e0d740abdb00fc11332e5f6a54d93b4b304614",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4514.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "7b9c42854243edbaa88389cf9ec6e806453bd959a28ead6f5f7d55f87a2e38ec",
+        "run_json_sha256": "ebb589736dc75b7ff5a6bb02e52ad1ce62cb7afe37a863aed11dcf27f3ba91d8",
+        "test_orbit": "f4514n32_r8.4493_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "7f66c06a81f7b94086a8b78686c32b8272fd6a704bb4816753c479b8f439838b",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7896.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "0a523c34e2a14bbe8628a74fb802c46b2b6eb43cb55809786eabd0628efdd710",
+        "run_json_sha256": "a8fa0cbf787b2977ff8cdc4cf56820eed851b583c9116b58ad0f6502dbec0a05",
+        "test_orbit": "f7896n32_r9.2387_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "e7d92c5c7afb04062d6d4e98229c5568e260484649944ce3f7308d9b50bf562a",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4884.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "1027311a5e844c267e13fe1df42474f4c60359cf60d76d574574db9676290206",
+        "run_json_sha256": "57ae034cd2ecec531222e31ef90a7b00eaf84f9280354069250a3d7742131500",
+        "test_orbit": "f4884n32_r11.6003_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "460ed6530be2a004f112ed239855b034548b5fdcb9cbf2a2cb5471b2bd069911",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7728.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "37a8be23c9113a7a31b5f68db60e1552ccdb6c111338ae1627ce45ccec677c74",
+        "run_json_sha256": "38f9fd81197b60f38e2dbeeb1dc113e9b541324f777bb34dcc63ff12f7e29e77",
+        "test_orbit": "f7728n32_r9.0879_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "4cd7d0c5166a7009b61c6e82c178715b887040a6dbb98cd035467ba9d784a89d",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4311.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "32b547cd32ac736169141175fa9f486184102bf2a9f4368dbc6c4cbe14aaf073",
+        "run_json_sha256": "5d06b72b43c95bb7aa1cc1fda776e94318deba42caed752d7a2ce4905149529a",
+        "test_orbit": "f4311n32_r11.6003_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "67db970030ac8eaa6a65fa1d23c0748af3231184950abd41f8cf66f6ac4d428f",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4348.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "e8d295ff7f87d68c1bd32304a745fd104855e3da589dcaf97f533bae927a4954",
+        "run_json_sha256": "40489fdd026de069bd3f6b0de7659762ffaaaff016ae458042b5b4c6b3a4f656",
+        "test_orbit": "f4348n32_r17.8375_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "5977f78eae0470ce8d2ad689b007a5cadc09fecb918a7f669cae7cb6b842ff24",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4631.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "b793983f9ecfebcb76b8b3426600b6d79204c895625e9d89fb2e486fd587828a",
+        "run_json_sha256": "9fa6844bf331de162e405f01dcb30ce4a30e6fe488963a842b3d67611bdf9dec",
+        "test_orbit": "f4631n32_r12.3041_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "ae33427e7a13c0c555c844f9ac4088f2efc8ea9385a3a986e208c7ceb1321e22",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f3084.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "982083a09424238ce466857000f44a642abc37211f98e62f237f32c6ce3d1264",
+        "run_json_sha256": "4bc3ee6e001d82259b6b1bcf4ec710c936487a9178f52cc98b8ec6ba46802033",
+        "test_orbit": "f3084n32_r13.2844_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "6873435d3703faafeb38c616472c23d290cf7edddaddffb1f14d8ac08db30a65",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f3094.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "622ab996adc16e1b3189632cf140968c52bd229778583af0927e8b4b669de366",
+        "run_json_sha256": "9a20a02b2b7d215b7da9a6a4c0f49ed7bb2c863351451d03a8b7292c43bd9abc",
+        "test_orbit": "f3094n32_r17.6354_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "d0ce149892ffc884d7a8e44077e9df233e5d14b3e7a6c8550a3855b86284c27c",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f3083.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "2dcc70d3ec94718e334b98c5261fde73f08c14b6e3f470d2450be6c9eb781a10",
+        "run_json_sha256": "c0a4518ae2f4f56acbb37b48c5a74ec2ada6ecf6eac2708387c479bce0a212ad",
+        "test_orbit": "f3083n32_r17.9145_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "cdf548f42b9dcf8fb87b73c6d94d06cbf0ff0d8247816df2507f604cb7fd7d99",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4628.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "6fc4990baebf35e6f3a75d30a16b4add2cc6a39b9ea494456117474436b5ecfc",
+        "run_json_sha256": "c26840466906f754ade3af68dd92e87bb17ddd5f2c7cf7146affb35adc0e99bb",
+        "test_orbit": "f4628n32_r12.3045_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "caaeeb3b55d6e66277bd05bf8883ec2a451d7d5a83501f950ea49cdc58d8842d",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7478.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "f8af09c92befdb656931a1595ae8a09d674295d40f68b77e66a686b4ace84763",
+        "run_json_sha256": "8c151f13296c8b061b1a563a4cd09a60ada8a274053426f3a138802750cb518b",
+        "test_orbit": "f7478n32_r13.9492_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "f5886d82b1ad64e365772f296fb02ac01d5431f11c8c120a69a6383eb2cf11e9",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4765.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "08d253119bcc4bcad0d7b08a6c7c0a9e65fe53b4733a325fb1af37d3166cb13b",
+        "run_json_sha256": "0665c35166052e82040296e77842ba10bc2125f7ca8f344a560e7c9ce25cd0ca",
+        "test_orbit": "f4765n32_r16.4602_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "86c24bbaaea6ed9a5ac4f72e0cd140f308e202865038f67c5ad1032028620c5b",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7489.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "84b3c43205b333c82bbd4ca3a52a558448ac7f48cbba7452fb76145fcebcaca8",
+        "run_json_sha256": "0b9b413c609f59c19f4ca65874ee4207fcdc87a04738098750c9c35781bc35be",
+        "test_orbit": "f7489n32_r12.9082_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "a92d2c635f64359fb41dfae35db05968efa17a7c6476d5831b2db6df3a4157aa",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f3093.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "01a6ab0a4a8ae9767fe4df4df56368dd432f4cb7fd7b5eb129347afb03c296ef",
+        "run_json_sha256": "105934b974601fcd4d66d7c6451d717f4049e5a744bdb2cd3be7553d17176acc",
+        "test_orbit": "f3093n32_r16.9299_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "3c346866bad7e52cbaba2f2b2f162449a2af172a33abfbbdece4f633c8663516",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4703.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "3e909e93c02654af31e70675437d66fe3bfb5ec0044f83e2649d355643e01762",
+        "run_json_sha256": "f4890fa6e28b2169dc6923018790827b62fc02b6844045677c246027e5bd33a1",
+        "test_orbit": "f4703n32_r21.4047_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "e58c6f2c30e0080654e3157cd438461e237bd93fa7e470496a5b5e76e1905c84",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4805.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "4bbbab36195b708151719a41c35b52c710348500e22de30c056c93846cf69d24",
+        "run_json_sha256": "06184343df265d2f7309296c21c4ec8808f8c51b3673a393c03d6f2e6b905e62",
+        "test_orbit": "f4805n32_r29.9646_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "1b0ca9caad454db9d9fbbceb736c8ed029327e2b80cce29cfb8aa4a121a6ce5b",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7502.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "e312e96274b1a51c72e9f0d4512d4e95faded79972104e501a816b28603cc8a9",
+        "run_json_sha256": "fb843310df8538e3412f99807afbb22c0d30681f60f227310ef7287f0c287f98",
+        "test_orbit": "f7502n32_r29.0638_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "b05d7471e7fde7dc86dddbd871ce52fc9bad0a34f3ce172057d3115b2f4ccefa",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4866.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "c29ede0032d2a65eb935d894063518be430e47d568c9719ea2e8b112912727de",
+        "run_json_sha256": "2f54804193238604416ef17eec85f25021217cd4f456d19c98b90c19a22b847d",
+        "test_orbit": "f4866n32_r22.9870_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "fd4ea1cc425e539ca3737124b509d6deba9af94243d20f25ee8492051b94c73c",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4634.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "4c93f9cbc930cdb28a213ecb91fb01f265a8228a6004791ddf716361e4d5f3f6",
+        "run_json_sha256": "d56282f496eaffd627d294d2d61fd66d07080ba917db48b78a375ebb7a2e27c1",
+        "test_orbit": "f4634n32_r21.1069_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "aba87ea9c06aad52786c8e764ac7adad9f73adda16f0235cc117c6f452bcdcac",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7485.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "6c7e0ef5eaaf13cdc07914d5c06fdbf5640c0a78ca7da6e83af0e0a17c1c88da",
+        "run_json_sha256": "ae16c5e76409ffe8e3580bf3f156e892c7903e4460907e6512af6af77fd0fe41",
+        "test_orbit": "f7485n32_r21.1468_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "4a5618c93a40067df5263ecc0d2c47ea2ea8116bcddf12c7f62544cb62ddd317",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4691.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "5e4ac59e76edb82ceddc6bfe3b84138e97ebda908b2f83aa04804913f7c6a669",
+        "run_json_sha256": "fef0eb48834b955c5e53703784831c9c3a845f3b9fe25b3605fd9b8a463ba7db",
+        "test_orbit": "f4691n32_r27.7897_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "4e011d90f696c3d408bd38a4c841ea8919bc73d99ab46310998b33c79a2ef3f1",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4816.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "c4fdb859a20255074495bae47e6ef6f23408ff7d1deb1899c2d8b15aa49aff82",
+        "run_json_sha256": "2ce0d5e3b272da15a6a16a62b58b13827e769f9eb4c4a32e29352641cf7fb360",
+        "test_orbit": "f4816n32_r23.1432_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "ecce2d0b12be949dd60bcb6bbeb551e2b576e7ee317fd92a8a711943cd885562",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7501.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "8b4b3bba346a46789e630fadb31a2fd72f6eee0370cb11617decd732fd45e90f",
+        "run_json_sha256": "e73033edfe5ba01337bea1018379cef2eadd3352644b8e8337360aa7b1941856",
+        "test_orbit": "f7501n32_r24.0379_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "c2cc41baaed8f5face880505fdd17242aea514557aa834d9ae761d41d23a7753",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4485.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "8896eabf469f7fc801cd152312b72bd361a6d2b2775022c9dce8b4fee835f7fd",
+        "run_json_sha256": "b6287593b93316c2c5b729c53f5a28be33c70c0b7a2231e2bc1d0ca921d52f65",
+        "test_orbit": "f4485n32_r27.3868_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "39cfdfa176dab471f29894230bcb025fe3434a96a48c04bd0593c4bccfcee51b",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4896.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "3b18b9168f6ec7f29a6eb633c7a34376a10d09d730dd79414a7d390410b2448e",
+        "run_json_sha256": "818403e9002eca342c1e9e00cea01b97a96a87d80acaca19f5aa1489493fd934",
+        "test_orbit": "f4896n32_r41.6215_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "1d9904b3d7ce77d77820296e27d79773585d6e1a84953f415396c9a27c2ac6cc",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4787.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "3d1dbe7ffb1877eb0db07fa6f71343c839b26c6ffbd908df752cdddaced54122",
+        "run_json_sha256": "91683476c7ecd19fd73c5f9b4196326b7ae61ab5e3c35040dd5edd8998f6b296",
+        "test_orbit": "f4787n32_r39.0108_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "72e01b9f861aa19fcc74cb0f2ff3b56de20d5df4ba91e337a5d8964d5c681d3b",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7514.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "2785924765a5d3ad548b581cb848accbd2d1b39b26e5655b52a4489ed277293d",
+        "run_json_sha256": "50d68c66085c44a136900a326eb6c5a11b8d8fe9366cd197985fbf0312d0ad2a",
+        "test_orbit": "f7514n32_r45.4109_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "bc0e2cd6e1e4f4497299fa0bf6265d7055d9f1e622b19a29c769a58d30503951",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4897.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "2cfed764e3855e701f69e51a2321746ed1cd067c03aa5384720459f331456085",
+        "run_json_sha256": "946208765dbed44ab5c0adc921b9d0f57285f9fc2b8de891d513a2d929b74872",
+        "test_orbit": "f4897n32_r34.2503_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "086a8256a94a22e4d579132cda8d1c7c71cee18a4892a296cd626991158d1738",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4733.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "16896408195f1c8c33ab76f1319ec8e7e39e7939de14d5baf58cf32f9b7a4676",
+        "run_json_sha256": "59d507aeace83c4a414dd362b25ecbb38ffcedd159d37efb5f207bb9d0f4a0fa",
+        "test_orbit": "f4733n32_r42.3312_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "f69ed9cffc645fd1336a15b11302f003a496f33deaf45e79748643e6aa8fceab",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7539.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "846476713c681630d71e06968f561e1481b4b3aefb82279a65dceaa8451cb700",
+        "run_json_sha256": "f7a5cfe4360ff51295562f4f944bc8e734968e72e8040c39f0820244cb03b8ae",
+        "test_orbit": "f7539n32_r34.1753_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "9e293662a61be13e205facf178c61debeb91ec5608a755f4fe9f2a624a5721fd",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4333.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "9fab7015b431dd53996729b74ab9d0643388f1e2b0ed5133749633bcc175a2ae",
+        "run_json_sha256": "c5ece1705118b5341a5fb6d9ae5481abdc7dce43f91dfa8b29ed6d57f8707e4a",
+        "test_orbit": "f4333n32_r44.1102_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "5c22e3f64fc0f10de2bf3da71b0807e7a70e5ab5f6a20e12576a58252a1b7c95",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4757.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "f8c9fa6062eda62c13c1d77e4e6782922378c75a23d42673fd12407a512d8cb0",
+        "run_json_sha256": "b87e88f024aebc1d3bc07872b3adec8dc9cff5678441bc7c95ec41d82196e719",
+        "test_orbit": "f4757n32_r46.1319_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "fde7a096340166dff9bb15eedcd5646cc327153f9b48f098d07bdc5b4143e130",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4778.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "82e7c4df1cc65077c79ca985006013b9e283c3536f2de10bd73a26a032fea488",
+        "run_json_sha256": "c33e213bd36d063969eaa3b4972ddd28694e7e184df9b4ca64cbc27f154d33c7",
+        "test_orbit": "f4778n32_r36.4509_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "84919c207270fb54862ddac4127b8cb010843ecbaffd718fd99b25f8ff697154",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4520.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "a29ccfb1a3a58a1c7bf53ddd88ddc3375d7f53733377e9035ac7ce81ecd69804",
+        "run_json_sha256": "d02b0a15470abfbf7773c5f353d3cf9c1e026a0440779f420c7dc70f079ce332",
+        "test_orbit": "f4520n32_r39.7528_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "b918cae43a50e9e941f3f284b7d7f657cb868b7aebe6671aa75d710be8876cad",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7622.ladder.e01of01.footprint4.contract.json",
+        "contract_sha256": "b9256ebad92f681cbff2c3debcda4a6a9fea7d9b4425ac2e8cc46e425a92f766",
+        "run_json_sha256": "e3aca65a8d7e31467294f6ab865679af6ee564697638f8d0fbc3ed5e8b3a74ee",
+        "test_orbit": "f7622n32_r6.2681_b00n00_rdot00_e01of01"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "e37e3d2425f23c3d1e4ea27b67874295a0d3ccf42cb6cce5856b49c9a990928e",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4699.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "d0150267a37d40f5059164e96821f0ef4b8d24b9c234c2b86fad98046e03bca5",
+        "run_json_sha256": "266c97b9a416fdcd527bc2df773d95a1c2a01de89ac6be0bb24b465b9285f40a",
+        "test_orbit": "f4699n32_r1.0872_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "f620b83a97442c83e870e8b955e40af5cb1bbe1898f3a128c6fda36d1ffecfcc",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4678.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "8182d60d8a083aa1bba5e2dfd3d2cbcc6fcd1ca2dccd3a9adde58a715a09bec2",
+        "run_json_sha256": "378358c4b9b63bbf46a35dbd021db433d66af534d2c70f2e30d17096be375319",
+        "test_orbit": "f4678n32_r1.0883_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "851bdf708a9ffcda358bbca3895e279ca000573611ced42b50bbdad47d95cc02",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7792.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "505f90ceb06b8c19dec21713adc9d74d0f38dd9a95f6d0f905e3405b82e78a20",
+        "run_json_sha256": "a5fdf6a2f4fb9678dd69cb35646efe27980f675e72abcbd192733b81c9ea899d",
+        "test_orbit": "f7792n32_r1.0835_b00n00_rdot01_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "a14495436c2c2e261044db45d4f5f5c38fe9b21a99b12e8712f9d381fa2c2ffb",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4785.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "c2a5c9fb9cf1f9e1bbdaf49c2fdb6a1504092e356e3b94d9b386d6b604888b13",
+        "run_json_sha256": "6558274208a90f78a8d86e1fa1a4dab33a84d11d9637aeee606f7253e7452c75",
+        "test_orbit": "f4785n32_r0.7628_b00n00_rdot01_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "0b94dd90d1dd304be188de76b67b1ab995370593d2f56cc1afe1cefa3bbcee2c",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7541.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "23a47ec5603319662ed7779f8ce8e114953f3024c9a2a240b2dc7864b0384107",
+        "run_json_sha256": "1f94c6049b14313909716b627a6753cf02a0b0317f3bb4b6c10d37ba353245e1",
+        "test_orbit": "f7541n32_r0.7197_b00n00_rdot01_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "ecd6a43807b65d5322005fe6780084ae2c62a9cfc420c08de524b7579bee4485",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7970.ladder.e02of03.footprint4.contract.json",
+        "contract_sha256": "607b12c1f59a155289cd97b38e5d925be1d682247b94a4f14c23c6b3e0cacaaf",
+        "test_orbit": "f7970n32_r0.7521_b00n00_rdot00_e02of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "4989a88ad9375e3a3c52a91b043681a5d9feecb573fd6d5a528a8f1b0198f9a0",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7502.ladder.e01of04.footprint4.contract.json",
+        "contract_sha256": "ec75bb766f014119a78df8783a910de8aa10be4767e47f25c81792986c17cce3",
+        "run_json_sha256": "854f254448217ec771a6b9fa990bc4e5968beec9070c8d6a63d1c9c38607b291",
+        "test_orbit": "f7502n32_r0.7692_b00n00_rdot00_e01of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "2bdd6f9bd1e38990a1c72a0546e8865ad2017ee674b18717e9ba23775dcbe5f7",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4654.ladder.e03of04.footprint4.contract.json",
+        "contract_sha256": "9a7c25be3ca09e340526e0c89ab6b39f037b5390190f5328d3cb0555bf15330f",
+        "run_json_sha256": "3e016b171a68a1af6538a55d93b15dfe0eaa4c4c84eea1363fd6aae1c0579bad",
+        "test_orbit": "f4654n32_r0.7639_b00n00_rdot00_e03of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "744ebd47c34c70c574c105d36b33d2e2f938b480f06d7809fd2fa4a37ab970cf",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7572.ladder.e03of04.footprint4.contract.json",
+        "contract_sha256": "1a481e06211f751b2df26dbc89ca72c890fbcd136d0d8499d0573cd8970fd739",
+        "run_json_sha256": "3d8108696f93a5f1c5e97ee8803c916132a85216cf8777ec63578a1fc403a26a",
+        "test_orbit": "f7572n32_r0.7979_b00n00_rdot00_e03of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "9f83655b4f2c97890d801629f7b42bbf6471460510ab004b72aa06662f74ffed",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4790.ladder.e03of04.footprint4.contract.json",
+        "contract_sha256": "a0418e5d2835da640bbd6223dd5aee41a4d0dc8775c5404e1dbde642f70d1aac",
+        "run_json_sha256": "493a87efce0d7cdc65e0745bb29fad7c3ed0796d3b05711f70f2356b92379402",
+        "test_orbit": "f4790n32_r0.7627_b00n00_rdot00_e03of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "e72e9180b73267aaefeb8b817a85b1c3c8269631dd5b85582db2fe1ca6fb52ea",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7494.ladder.e03of04.footprint4.contract.json",
+        "contract_sha256": "9a4e925b634f9253a3455ad78df9c018dee3400d727c0c2fc3b26515a3a18368",
+        "run_json_sha256": "a3e06255ef6ea45ea15ce97a9342e19872babe85f8c6b3bc3d93b3f25ad47090",
+        "test_orbit": "f7494n32_r0.7918_b00n00_rdot00_e03of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "be463859e323d9fb4ea50fdfbfdd58364b39786d2ceab51c76fbf0a0619e11d8",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4802.ladder.e02of04.footprint4.contract.json",
+        "contract_sha256": "7af118e556063d9221a4a7f51eb16eb38a8c75697152dc14dad4555555813d03",
+        "run_json_sha256": "de2ff81e523286ae44c19e657d6e927821318b97f133368a2e1a8ee70fd21d79",
+        "test_orbit": "f4802n32_r0.8030_b00n00_rdot00_e02of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "c0194229f13a85c1087faf73d65c46435684dfcfd8a739864aca04d6b22a5f02",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f3074.ladder.e01of04.footprint4.contract.json",
+        "contract_sha256": "edc4e92069ad4ac4c0f01c462bd6e435da8d0695f077f962293dade6e188ff3c",
+        "run_json_sha256": "56f8bef70fd2b4039dfa1efbd9c35f86d20fc20af97ce8c58ae07703029bc2db",
+        "test_orbit": "f3074n32_r0.7891_b00n00_rdot00_e01of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "38cf8ef14d199eca0f37784dc665fb994d424b1ea548e108226239e5ef719a80",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4525.ladder.e02of04.footprint4.contract.json",
+        "contract_sha256": "3859d5c97bb1a925cf1c7384951c6addd37a2c22f45656bb99476d1d57f85e24",
+        "run_json_sha256": "bd4d1326cae60a40837f9ed6f8adaff9b48820476714e35c511c49ddb4e76e13",
+        "test_orbit": "f4525n32_r1.1901_b00n00_rdot00_e02of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "7e353a5266a59782a15ce5b6ea4e1ab7b32f9de18a12bb00b907abd133637ec1",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7539.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "d79197217a902f8f71616ce73755dee7616e9b8838b933c1347856b0cc3ff3f5",
+        "run_json_sha256": "3925c7fdb52e5608e50906fc3b2a4369d63b40411178d456a4fb3a52e2cab40f",
+        "test_orbit": "f7539n32_r1.2248_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "fa2550bb20e07a88662fc723ba4270ee08a9cab7689283ee698e14b93d5f6093",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4689.ladder.e02of02.footprint4.contract.json",
+        "contract_sha256": "c87289fe263a02e0a67260a7e73b179d41ce345e51920e9b0460300d701f96df",
+        "run_json_sha256": "ec70a74a082db75fbf8a5a8fe289dc9dd4b8342c94c9bf864f6e7f26550e14d5",
+        "test_orbit": "f4689n32_r1.1104_b00n00_rdot00_e02of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "a70be6e3a009fdc864f35706efc3021ceaf135edbb8caac97ef96c568aaf8482",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f12286.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "9397bc1b35ff704c954f91c21313d02fd7df7e8674adfaa68810418ec127f3f5",
+        "run_json_sha256": "b3b559f1ccde3480d1c9771aabfac764be8c9b1fa64ad625c0b504c9433611dc",
+        "test_orbit": "f12286n32_r1.2706_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "7e9a3c40e1028133caf09d3151a7e5ffed481829c5dd4b4f48ea7c3e1cd4e55f",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7509.ladder.e03of04.footprint4.contract.json",
+        "contract_sha256": "263f6d8702571ca5f564184f273daf582782a540f2fd6f68b9aca42ef889ed19",
+        "run_json_sha256": "c9d4de557059bd9763a85831466b99f209ff78988e66355595781da9a37730ed",
+        "test_orbit": "f7509n32_r1.2134_b00n00_rdot00_e03of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "416aba6254d05cd4e8f8fc00c41a3b484db0964205680b57aa6dc8ce927c2884",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7702.ladder.e02of03.footprint4.contract.json",
+        "contract_sha256": "f14dc63a526cb72c5098f13e20730169f9a6419300c26ba75d1f2ccdce02917b",
+        "run_json_sha256": "415825e1a42da6aca5230e9ccfc565fd6131827bcfc6622d121c6e8265268cd1",
+        "test_orbit": "f7702n32_r1.2984_b00n00_rdot00_e02of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "b85c4fa1b430ca9124e4524d38d8d2b8a0d06c304e4c9222e620bdb2c4934327",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f3104.ladder.e03of04.footprint4.contract.json",
+        "contract_sha256": "5821f1fe92e43cc497cf48a1939e6737e1ee9503876a7eba233728f24f958deb",
+        "run_json_sha256": "b703ed12e1bfec6ea121ff15d84b8e9fb176a0ae5f61636529b63fac9b218b43",
+        "test_orbit": "f3104n32_r1.1491_b00n00_rdot00_e03of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "0329420863eb0e347b58fc6da3d7a1e305065c7d01c3f44f70d9234008a7106b",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4541.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "bf560dea4bc328f3988650eef7d20f3d01925715e5af8bfa6abb637f8c3baacc",
+        "run_json_sha256": "4ec86eb94bfae4cd17f79648426b820bf96586a2cd2a145931f492f8855d9607",
+        "test_orbit": "f4541n32_r4.2685_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "e3bb7988df01430a6b6cd579ae3992bad407cdbf4220aea877163a23e1f2162d",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4670.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "48d296e27a75f014c7c832bff7b54a76f70dd22a1f307c01910a99536a73f653",
+        "run_json_sha256": "51cb484bf6486258ed8e67e24b4aa2319ad76e5237c1d7094eb47e9a82ff229c",
+        "test_orbit": "f4670n32_r4.0225_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "971373b6f9156b573d975aa5dd432c0c065129bf924b7f9906aebbbcef78cee5",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4539.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "7bbfcf7fd80e16662fdd1288ab039bbae6a9d68bc1d60de37fdb259f07a8ac26",
+        "run_json_sha256": "2638d1219d125f46917f385078d38f154dff97e47cfafeb7c5503d2feeb84c2b",
+        "test_orbit": "f4539n32_r2.9266_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "d06816d3880d26b41f03e2d0c6373faffff174b3d155a8f05d84c3044256432d",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4489.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "345bef2dc78de2696418f8d2164529bb95e71613fae1d4be8aca8d2fe589c8ff",
+        "run_json_sha256": "e94b47dc4744e9780345e3aab01279da9af6ed7f247859a53bb5b03324bfdd97",
+        "test_orbit": "f4489n32_r2.8412_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "12da016db21f7bc0222e14c6ea821d0be3ba8da7702a6e657176e50764d24584",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4698.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "cf4e5f29148c89e9f6cd41cb26fa00f845cb82a49bb9c3e6609a955259c73686",
+        "run_json_sha256": "06d4be04fbb548f09cec7c74b57ff76faed20175e6bcc760bf50bf5b82d6a788",
+        "test_orbit": "f4698n32_r2.8892_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "14b58787e4ad4e1f83ddd558bbd109bbb3e907e16821c443b8e3dfb9bfb59925",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f12270.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "1ea10d936ed26e8a46eaa92e49280d7187adfc9b27620db94a922dbd7afb865a",
+        "run_json_sha256": "e76ccd2456379250b7c4fe54005ddecea17c5231e2e900ca27df65a8dd638555",
+        "test_orbit": "f12270n32_r3.2946_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "2e22f8f50feb88e43101c400cc0acee317319cfcd96adb817de81520f6afb331",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4898.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "d67165b7b2f9d9fe98cf34d2e3af65c6ee28063799f65dff853561103e11dd51",
+        "run_json_sha256": "cb8b234736f06fa73a8450ead97ce3de443d4cd023cb1625abed5aef6cea7a5f",
+        "test_orbit": "f4898n32_r1.7640_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "3612f46cab24e4b686b3dcdca2397076caa416c2b450508c0bb2ebf38f63fc42",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4287.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "87e3dcde81fe18ac711adb2bf89ba8c06ddb66efc42d4007893d5b4bd8e91411",
+        "run_json_sha256": "1b4625fb77709fec6ddd21b7eddd01d92aa85df648ac4975452fab3366ae859b",
+        "test_orbit": "f4287n32_r1.7431_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "3339d114059a709315a2cb4d709bddcf2f06ed41e0de3c5801924d2403342693",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4690.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "53a3ba76b7b957e097d9de919cdde7949874309ab502ae8eb5b2ce638fa56569",
+        "run_json_sha256": "7406bb3e65fa7c882b97fd5675ceec9eb503a1e96ed95e240089bae123894cc2",
+        "test_orbit": "f4690n32_r1.7541_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "5f4a457d8559ea3b9aa87e10bff7674b2a1b3c93c44f16a55738338c082ad097",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7806.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "a31573bec187e68934032b48868edfeac512dfabb8f5a58d1e420b123720f891",
+        "run_json_sha256": "287deb2e61acaa8139fecf4b6cab5d2681ecbe62612f410f6ce06d9087ad5b4f",
+        "test_orbit": "f7806n32_r2.1406_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "d3dab78865ec67bb287934a53fb540bc52f0b81058585709b0d8e2df11ab5877",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4715.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "d74f9b64c3a1e6edfdb02de567700c8429ab1570e79c5e72f36632cf4710c467",
+        "run_json_sha256": "ddbd670426f9badd945307082bff426d07211a983db8da6652e927a0d660e77c",
+        "test_orbit": "f4715n32_r1.9516_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "947ebfc7c5d4d4cba02de88887e9b27a8134e2ea09ddd7535b5742387be861c7",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7711.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "7749df7180a68219b063740f8999b63727dba3de9e221a6b68dd2c888c84fc8a",
+        "run_json_sha256": "7b8cc9681f25984e7b4c0576d227e44c342395b9dd215c9e3053fe9c5d9756f5",
+        "test_orbit": "f7711n32_r6.1106_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "bc1463e13b7dba97e73802fd06f43c943fea2c0c60ed60fafdb75d198a2349cc",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7468.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "1c908484f1c6f67f43f5e718f4ca415c2420aad6454bec7ca625f4c72d7b00c9",
+        "run_json_sha256": "f3a5bd06d1697ab3067be050eb56b2ecfe763b1635b7e3e4315d46b87ead4aac",
+        "test_orbit": "f7468n32_r6.1383_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "4e5667e6c00ae6ad3ac744824650ddcddf107c7ce0b7e46843e83d5e6a6e3475",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7537.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "904c55e3caea76e70b0127b9e0bb2990a27b62de5201c8fcf8cc5919b2222d53",
+        "run_json_sha256": "b00e39b22d3095ba26ced2ba5bb9d40be2e380959ab5011066577a61b21ced02",
+        "test_orbit": "f7537n32_r9.3575_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "27ed33b81d14eab84f2a15c63dcf2bde95f47468e0ace51f47c573dab20cee6c",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7491.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "e4f376d5efa3796aacd4f7ed989c3a94a84d45745269febc962d5338dcb15fa4",
+        "run_json_sha256": "664b76f84496ff674ff9ac9fe91c83ad86c4fe39382d1eb954555fefc60e6e06",
+        "test_orbit": "f7491n32_r9.4644_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "6b82d2cd98777af816381afd418b3a26fecd1a64c3871a3c35a171aedb830068",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4809.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "358d02bb8554d0eec035119a3aaebe83a900ce9bdecfd54bec65289dc09f030e",
+        "run_json_sha256": "a8c349a6b8099831780fb2b83291bb17e17d67ea58a6c7374672badb9a6a4343",
+        "test_orbit": "f4809n32_r9.4677_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "d44ffd5cba90becbe5c0be5718cbfc2327ed66db2aaf26f405efb65d0f32cf83",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7472.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "1f17b443d8b01e2426c788800bc510b5d9cb3d49bda950df9d59d0a5e67ca4ca",
+        "run_json_sha256": "e791d39674671e030fc1e49a8dafead118f6a4e93dfb2c28f67daa40c3d810e9",
+        "test_orbit": "f7472n32_r9.5149_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "4cdeb08f065563c9c7787870f515b380a5815ebadf9e56066b0ad3bd55c91e85",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7755.ladder.e01of02.footprint4.contract.json",
+        "contract_sha256": "df8871753d516f6e1f484cf436d209ed6617180df01aeb8ccb5797233b9c3d4f",
+        "run_json_sha256": "6e564a45331e38730d4b2abcd735e609123ab3dae4ab9675c4e04c092c40773f",
+        "test_orbit": "f7755n32_r9.6015_b00n00_rdot00_e01of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "15a341a7f24a9a424997f08a7d258f55b3531b397983c5af07c25eac4dc85354",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f3079.ladder.e02of02.footprint4.contract.json",
+        "contract_sha256": "b242ed6bee3c50add7084c40c96610b672b97c7dc40a09630f96c5e63259c944",
+        "run_json_sha256": "a8e2b3201a6641903479d172a499676ccf0ab8e223aed68cb43a5eef2c0a30c0",
+        "test_orbit": "f3079n32_r4.2262_b00n00_rdot00_e02of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "11d43b09c0fcf4b31f5bcc92e192d46e1fce604db8c8af5530aaef7081753ee5",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4765.ladder.e02of02.footprint4.contract.json",
+        "contract_sha256": "74d40896731331bce88490f807678a952f6f7f632a5a2778fb1180a536286e34",
+        "run_json_sha256": "9188874850b3afa546bf569138396dd7e06631157f78fdd7219843335c8f77f5",
+        "test_orbit": "f4765n32_r4.0392_b00n00_rdot00_e02of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "b8d902335046f4767682a8cadff0acf8d0447752439a9ba365ee27c296fc6363",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f4777.ladder.e02of02.footprint4.contract.json",
+        "contract_sha256": "91d8214b33de37cce5de5d10271b011bb5ef7aa3e19767526814acb1300f3091",
+        "run_json_sha256": "ca663e1adab331d8cd62434fc040f924824a11da6edc3a92e753d96e7e53ecda",
+        "test_orbit": "f4777n32_r5.9283_b00n00_rdot00_e02of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "808efce8437f8c55aafecb9cfcba7a41f11cb5a71a5335ce937d63f3615086ac",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7536.ladder.e02of02.footprint4.contract.json",
+        "contract_sha256": "4406e9a8e3cdcd341a1dc8f80061c32d0a59506393f8ec0a5168b278449000dd",
+        "run_json_sha256": "29ec389992344d9da9d0fbfabc1a3d2d57cdd45fe18a8ce65c10283701285c70",
+        "test_orbit": "f7536n32_r4.0594_b00n00_rdot00_e02of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "326def0e1e65eba3b5cc5ea43e11f7f8b87baa554d19da64dc2288ea9bd24ac3",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7544.ladder.e02of02.footprint4.contract.json",
+        "contract_sha256": "305dc71203ace62a328b7bc1879936b20301106d21c2cced350a69bba032c5cb",
+        "run_json_sha256": "8a2659055c2590bdafc9d9cd5d8801d490c9e1ca224c98beba019b8e1c295a9a",
+        "test_orbit": "f7544n32_r6.1172_b00n00_rdot00_e02of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "f56412110d40a5a6fb61f9bc19a674273aa03c80d3fbd2ddf8019254e82ba6af",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f7664.ladder.e02of02.footprint4.contract.json",
+        "contract_sha256": "2dc7cf609a2ea9a12b5446dd0b814b05233983e44cd02f22f19bd4c7173cde6f",
+        "run_json_sha256": "44b76b46ea2ab9d812951a585c0558262d278aef01aa8f2a579b61c360071f55",
+        "test_orbit": "f7664n32_r6.2466_b00n00_rdot00_e02of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "d6763480f04e8446b0598d3749999012e3b69438d8e92aa76875269b388f1079",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/outer/f8343.ladder.e02of02.footprint4.contract.json",
+        "contract_sha256": "8e6d275b11761804caba986e4fe3619ff4f6e185481e05a3e133738e7dcca3c6",
+        "run_json_sha256": "c6c149f9b14a542f73108437533f8525e8f02a4697b92cbc57cf404159c5d2be",
+        "test_orbit": "f8343n32_r6.3118_b00n00_rdot00_e02of02"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "e86304496ab3d8a51f88211a80df49ca6ee934b8e2edc21871bce51c77d2e462",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4334.ladder.e02of03.footprint4.contract.json",
+        "contract_sha256": "2122789f83dbb96b4c1e600aaf05b91202f09ee38ab140ff0bc8b17c436f5ec4",
+        "run_json_sha256": "fbd2cdf7e152afb97932ad9c505b9a22a6ca52e90707ce8861c914e7a94d3683",
+        "test_orbit": "f4334n32_r2.9093_b00n00_rdot00_e02of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "ef3d199ed31265210e2acd90eb8fc0f6493a0be32506355cac10ad78c7de3d54",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7837.ladder.e02of03.footprint4.contract.json",
+        "contract_sha256": "bee7cacccb8205c314d3ae46862e1aeeb550c0a5d9ec15b81a85d24fdebef1b4",
+        "run_json_sha256": "abe874f869a8d901fbfe71bb4e4814d3a0f5a6ca39dc7f9c41ecaeb30330d18f",
+        "test_orbit": "f7837n32_r1.9772_b00n00_rdot00_e02of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "860a5c845d6e7beda8494ae1d8f4b0aaada2b68165564539392c0cafc6d00d63",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7887.ladder.e02of03.footprint4.contract.json",
+        "contract_sha256": "0f32be281a4f9dcf5d16176637a3ff1f4b0eb669816a906e6501287f4f2a9f8c",
+        "run_json_sha256": "b1789b20cfefc4b4a3f4a7eacca98c46f26b7b8a1ef3cd197ec599ce465a5c61",
+        "test_orbit": "f7887n32_r4.0366_b00n00_rdot00_e02of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "a6ab6c466ac84080d9eae77a982b5fdd26d0c05570ac06d09557cd970855b8c5",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7898.ladder.e02of03.footprint4.contract.json",
+        "contract_sha256": "0f26b67be638bd343288eca4ca8dcdd28f5527a4bf17ea11a1d27da1e0411354",
+        "run_json_sha256": "7cbb32df0afb9ac18b54ace2b725913afbc1c8ae1fffad5b5501899db85552f1",
+        "test_orbit": "f7898n32_r1.3145_b00n00_rdot00_e02of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "d2ba195f11c0742ee23b2271ad37b81fe5f47b1468147fc03f1921d3ca09c347",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f8344.ladder.e02of03.footprint4.contract.json",
+        "contract_sha256": "cbeb6de9cf7b54fae0fd449579de21e81e6d79c48dc63a8d4eae93e9432d5dcd",
+        "run_json_sha256": "d3bf62322ad4bf4e994bf7b3019b770c46dcbb128ccc9bdb49b606062edada72",
+        "test_orbit": "f8344n32_r4.3774_b00n00_rdot00_e02of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "94f95207c0eafa70cd53c654febe150a52b153f90cb6d06aca0ff05e38b96be8",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f3072.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "d87a239c6d4a27af424082a1d32adcc6868a91c6c69c1e407afa2c611918f6f6",
+        "run_json_sha256": "b5c82efeff34ce0601c0d9bcfb71f7111a7737f168dfc4ddaf555625a5c68ba1",
+        "test_orbit": "f3072n32_r1.8369_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "b19a921d15b272fda164f0bd6b36e162097631fc92558c95d57e9b121c92676c",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4675.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "bc43828957930445c0c1f06841dc07aad141f999ac44917bda1fa30691a43074",
+        "run_json_sha256": "7848e549e0c9717a8873372c14882483d9518336bfbe32293a34fde589ca7b5b",
+        "test_orbit": "f4675n32_r1.7443_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "1026fb415ec16b8083d0820c3d8e0e441c0a15a747f5421fa174194b82a462fc",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4700.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "873bc6c2a1490d369001065f62c602653bca149559a3adff3005a1cb1348ccfc",
+        "run_json_sha256": "88ebb3270763653fdfdae54ea93928412fc0a195b41137753120d4577a49b6ff",
+        "test_orbit": "f4700n32_r2.8963_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "9814835f2695152479a3e14261077679b038a464f825b280cb9daf57c44c8888",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4739.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "9f22346852bf5f81fc7248ad109222450efd2e6f2c5c31d6243e5f0d995fadb2",
+        "run_json_sha256": "f5a69f700fa661be15577f06a6c47013176319daca62d13f06ffd0bf953a002b",
+        "test_orbit": "f4739n32_r3.9716_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "f80d6cff647567b08e5d53178115ba0d78f6332aa07598a3a9fe5bbf5602326a",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4905.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "d738ffea2c8d5037d210b14e9f302d972afa843d0249664ba074c8c8fb99095d",
+        "run_json_sha256": "89e37bc3c97d44a89eee0ed501deeecbf24ab56e0125e3a78adbbede23783f29",
+        "test_orbit": "f4905n32_r2.9103_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "8df8d0cd54654ba546e00a90a92be2d270b051611a0caef3b553e1f4aecff0b7",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7445.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "384e92d0e0e942716f6084c817c7f540ebee80d73e84cd9b4e8c39ab6c805a90",
+        "run_json_sha256": "d3fc19097736b4b714315a070562c58c663f5115b517048b9250cf97f82adb31",
+        "test_orbit": "f7445n32_r2.2249_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "39b8b9df5405b6fa6703be3b55ffb6e608e8695ac432d8e547961aedfc98339b",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7478.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "77cfb8f8dbd2774a70ff8c28e583489d856af5169616be4fa148c8cb72efe952",
+        "run_json_sha256": "f9ec9a47af7806181c8729bae2eff6c967a004686c3aeee3ad94544781743ff0",
+        "test_orbit": "f7478n32_r2.4535_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "74f594b12287f2d276a75d4d76bcbaa68f58e0d1cf869c8cd78fc76ed44e8327",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7499.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "b9f6559dd39a88df96adb99a2a38adf9e2f9ff9d3c39923644b2d1d50a51b2e2",
+        "run_json_sha256": "7854f6419d3ff5960f077c5c841a6d5d064f4f6e92e064fd110b289f7cde4f3b",
+        "test_orbit": "f7499n32_r2.2664_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "cafb30930d81156535a7200ee3ba75b7ea6cf54962a5cf95173d39bb940714bf",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7512.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "3bc1eccd60c6468135c13668ef6ecb19a5deaf67947d759311c2acba8bed6640",
+        "run_json_sha256": "0a6a8da2d388f7e190c678378ee3e817b7cefa62bc125cb53cbd14d04fce264c",
+        "test_orbit": "f7512n32_r2.1516_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "9155476d0ce25be9d30ad04844d8e4f48b9d68ef017a9d2c5f3f55eeaf119a1a",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7529.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "bf315633aed924fe9170275e63b7ac768617f90231bd7d53f391fae16412c79d",
+        "run_json_sha256": "957af856aa7b73707ec2d005db9f3ea0ec620da4f32bf9663d0821b8c3055090",
+        "test_orbit": "f7529n32_r1.3583_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "a86deac9c933614da1c8227ccdea1e17ad0a62cb05475756f7e8d6a8afdacddd",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7642.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "f828cf85354219347b22529f273f769ac156cf5d91f4422de2339f6b340a5e0f",
+        "run_json_sha256": "3a090bc330d3a9fdc85369a09a83b66cf44eb8d5cebf073ba503273ea8b6a60e",
+        "test_orbit": "f7642n32_r4.1301_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "1345f2031737cfdc1a1d651039879ce956c34787d3e14aeed1981aaecaffec9f",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7648.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "93ae48258cffe7610dd3d051e46c9fe5aada7216e7d53a2bf519793b8f111e73",
+        "run_json_sha256": "ac694cb7f7be2726a3e40d5821ca8906c4fe14b79e5d57f6c141443890e865cf",
+        "test_orbit": "f7648n32_r1.3124_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "adc09d2a0fc54add74b653c2fec1deb7be6a621005b907e6e360682fdb5a3c18",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7706.ladder.e03of03.footprint4.contract.json",
+        "contract_sha256": "6dfce17f9f914ee58a76fd9cabb6b9c08123fa092c0c97889dea1b365ff4359e",
+        "run_json_sha256": "96f377f1b1baa622c68e1e06aae4aafc5a4cd3a98ebc3c4460b74b93baa403f6",
+        "test_orbit": "f7706n32_r4.0252_b00n00_rdot00_e03of03"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "cd1046f0a5f4fe660549d2c74c1a8d1cffc22fce354b7b8bf8c7b9aa93086b05",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f3081.ladder.e03of04.footprint4.contract.json",
+        "contract_sha256": "7002c694d07f859d5484b759549cc6e9e7180b29fb1c78853cc172ad35808b02",
+        "run_json_sha256": "483d98f35ff31967f530033c033a1ca0f33b307723de6a66ec7732cfb6302ff4",
+        "test_orbit": "f3081n32_r3.0234_b00n00_rdot00_e03of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "0e397b727e8e4c084859922dec050c78ee845b78855be6a02450b2859726a77e",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4519.ladder.e02of04.footprint4.contract.json",
+        "contract_sha256": "920416472ff0c752b5ae66a0a4ff58557b28f8d5df4ccf9c90e3de720b55b4f1",
+        "run_json_sha256": "7dfc61ab93438af1767949396d3aa2d250f38e036f7759936ecaf962ebc847c9",
+        "test_orbit": "f4519n32_r1.7398_b00n00_rdot00_e02of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "c12fd02d64f18ff60f405e8d965d19dcea727c94f3339a39390f3ecef7c426bd",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4701.ladder.e02of04.footprint4.contract.json",
+        "contract_sha256": "c26eb1e393687b8105caad8f985c3b77dcc63f7f4d02c7c9664783c5326ec261",
+        "run_json_sha256": "6cb5aa8ba691a3f7b1c79be2c75367a4dfa402ed8216d2cfac0086502fdf8720",
+        "test_orbit": "f4701n32_r3.0264_b00n00_rdot00_e02of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "d8167a4aa147a75ddcaddf73844d344c3d490e5cc6e714b9b24bd2b324306b02",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f4756.ladder.e01of04.footprint4.contract.json",
+        "contract_sha256": "2206ee3d4bb6123bb52cc30ddd271711dccfe2224bee86286473e7f720c8a3aa",
+        "run_json_sha256": "22656d0921f179738d61985fa0a69866acfc89595ad25fd4ed091f53e9e55975",
+        "test_orbit": "f4756n32_r2.3672_b00n00_rdot00_e01of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "511d2dff066a8977ec53411eb53c6a4222cdd2071526b893b23cf39014b46e40",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7524.ladder.e01of04.footprint4.contract.json",
+        "contract_sha256": "613b6cedb3effab6812620e6be2c68efcf4d1744d38079b21d4c05242889111a",
+        "run_json_sha256": "5ace567a8170203adee45f1ef915f1039303cccee5b456fd9f873a272654b50a",
+        "test_orbit": "f7524n32_r1.3439_b00n00_rdot00_e01of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "4bf7b1b931b3a694a0a6a2cbeabe0483507fd6835153ed7625820fd4bb345da8",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f7909.ladder.e02of04.footprint4.contract.json",
+        "contract_sha256": "86b234f1fd7a44e3baeb7c1bb7c10b5f49b186a4bbaaedcc3c7d38e495a2f8db",
+        "run_json_sha256": "3f1e2847d20cfd03fa3b32f8893c5401ee93cbc282ff91959a1547a98475d99f",
+        "test_orbit": "f7909n32_r2.0230_b00n00_rdot00_e02of04"
+      },
+      "role": "r07dp2 job"
+    },
+    {
+      "record": {
+        "config_sha256": "6ec38f356f923ea42f0b34bff77f3687104a5fc9b39a843cf2713c96570d4616",
+        "contract": "/home/moeyensj/projects/thor/thor-rust-experiments/runs/step1/tiling-r09-july-full-solar-system-ladder/inner/f11105.ladder.e01of03.footprint4.contract.json",
+        "contract_sha256": "f4ddc9edb47163c331f7b78ebdc7003d9bb7518a28bfa53da1af24cf82ab7b29",
+        "run_json_sha256": "6657fa1e2aca928c7c6333baba2b4f41ec576d98fb38d45260b8b296b09f71be",
+        "test_orbit": "f11105n32_r2.0118_b00n00_rdot00_e01of03"
+      },
+      "role": "r07dp2 job"
+    }
+  ],
+  "macros": [
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "thor::test_orbits::config::default_cov_half_width_n_sigma()",
+          "value": 3.0
+        },
+        {
+          "agrees": true,
+          "source": "ResolvedSigmas::resolve(THORConfig::default(), n).velocity_envelope_n_sigma (the velocity ellipse)",
+          "value": 3.0
+        },
+        {
+          "agrees": true,
+          "source": "ResolvedSigmas::resolve(run config, n).velocity_envelope_n_sigma",
+          "value": 3.0
+        }
+      ],
+      "kind": "public const",
+      "name": "\\cnTilingNSigma",
+      "note": "the velocity ellipse's n (Sec. 4.1, Sec. 7) is adaptive.velocity_envelope_n_sigma = null, which resolves to the grid's tiling sigma",
+      "printed": true,
+      "source": "thor::test_orbits::frame_tiler::DEFAULT_SIZING_N_SIGMA",
+      "tex": "3",
+      "text": "Sec. 2.2 'divided by $n = 3$'; Sec. 3.1 'rather than 3', 'a 3$\\sigma$ box'; Sec. 7 '$n = 3$ standard deviations'",
+      "value": 3.0
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnPixelMargin",
+      "note": null,
+      "printed": false,
+      "source": "thor::test_orbits::frame_tiler::DEFAULT_POSITION_MARGIN",
+      "tex": "1.5",
+      "text": "",
+      "value": 1.5
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnPixelMarginWords",
+      "note": null,
+      "printed": true,
+      "source": "thor::test_orbits::frame_tiler::DEFAULT_POSITION_MARGIN",
+      "tex": "half again",
+      "text": "Sec. 2.2 'half again the pixel's half-width'",
+      "value": 1.5
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "THORConfig::default() clustering.filter.min_obs",
+          "value": 6
+        },
+        {
+          "agrees": true,
+          "source": "run config clustering.filter.min_obs",
+          "value": 6
+        },
+        {
+          "agrees": true,
+          "source": "THORConfig::default() od_filter.min_obs",
+          "value": 6
+        },
+        {
+          "agrees": true,
+          "source": "run config od_filter.min_obs",
+          "value": 6
+        },
+        {
+          "agrees": true,
+          "source": "THORConfig::default() clustering.algorithm.Hotspot2D.min_count",
+          "value": 6
+        },
+        {
+          "agrees": true,
+          "source": "run config clustering.algorithm.Hotspot2D.min_count",
+          "value": 6
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnCriterionMinObs",
+      "note": null,
+      "printed": true,
+      "source": "thor::criterion::Criterion::default().min_obs",
+      "tex": "6",
+      "text": "Sec. 4.1 '$k = 6$ detections'",
+      "value": 6
+    },
+    {
+      "checks": [],
+      "kind": "public fn",
+      "name": "\\cnCriterionMinObsWord",
+      "note": null,
+      "printed": true,
+      "source": "thor::criterion::Criterion::default().min_obs",
+      "tex": "six",
+      "text": "Sec. 2.3 'at least six of its detections'; Sec. 5.1 'for six on four'",
+      "value": 6
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "THORConfig::default() clustering.filter.min_nights",
+          "value": 4
+        },
+        {
+          "agrees": true,
+          "source": "run config clustering.filter.min_nights",
+          "value": 4
+        },
+        {
+          "agrees": true,
+          "source": "THORConfig::default() od_filter.min_nights",
+          "value": 4
+        },
+        {
+          "agrees": true,
+          "source": "run config od_filter.min_nights",
+          "value": 4
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnCriterionMinNights",
+      "note": null,
+      "printed": true,
+      "source": "thor::criterion::Criterion::default().min_nights",
+      "tex": "4",
+      "text": "Sec. 4.1 '$m = 4$ nights'",
+      "value": 4
+    },
+    {
+      "checks": [],
+      "kind": "public fn",
+      "name": "\\cnCriterionMinNightsWord",
+      "note": null,
+      "printed": true,
+      "source": "thor::criterion::Criterion::default().min_nights",
+      "tex": "four",
+      "text": "Sec. 2.3 'on at least four nights'; Sec. 5.1 'for six on four'",
+      "value": 4
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "THORConfig::default() clustering.filter.min_arc_length",
+          "value": 2.7
+        },
+        {
+          "agrees": true,
+          "source": "run config clustering.filter.min_arc_length",
+          "value": 2.7
+        },
+        {
+          "agrees": true,
+          "source": "THORConfig::default() od_filter.min_arc_length",
+          "value": 2.7
+        },
+        {
+          "agrees": true,
+          "source": "run config od_filter.min_arc_length",
+          "value": 2.7
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnCriterionMinArcDays",
+      "note": null,
+      "printed": true,
+      "source": "thor::criterion::Criterion::default().min_arc_days",
+      "tex": "2.7",
+      "text": "Sec. 2.3 'span at least 2.7 days'",
+      "value": 2.7
+    },
+    {
+      "checks": [],
+      "kind": "public fn",
+      "name": "\\cnWindowFloorDays",
+      "note": "max(min_arc_days, min_nights - 1), as the text says",
+      "printed": false,
+      "source": "thor::sizing::Criterion::window_floor_days() at thor::criterion::Criterion::default()",
+      "tex": "3",
+      "text": "",
+      "value": 3.0
+    },
+    {
+      "checks": [],
+      "kind": "public fn",
+      "name": "\\cnWindowFloorDaysWord",
+      "note": null,
+      "printed": true,
+      "source": "thor::sizing::Criterion::window_floor_days() at thor::criterion::Criterion::default()",
+      "tex": "three",
+      "text": "Sec. 2.3 'is three days'; Sec. 5.2 '(three days; ...)'",
+      "value": 3.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "SeedCarryForwardConfig::default().min_obs",
+          "value": 4
+        },
+        {
+          "agrees": false,
+          "source": "THORConfig::default() seed_carryforward.min_obs",
+          "value": 5
+        },
+        {
+          "agrees": false,
+          "source": "run config seed_carryforward.min_obs",
+          "value": 5
+        },
+        {
+          "agrees": true,
+          "source": "r07dp2 as run: seed_carryforward.min_obs after each job's GridContract::apply",
+          "value": [
+            {
+              "count": 110,
+              "value": 4
+            }
+          ]
+        }
+      ],
+      "kind": "public const",
+      "name": "\\cnPartialMinObs",
+      "note": "The carry's floor as run is PARTIAL_RULE: contract::enable_own_fit_carry sets seed_carryforward.min_obs/min_nights to it on every lattice shell, over the run config's 5 on 3 (and over THORConfig::default()'s 5 on 3).",
+      "printed": true,
+      "source": "thor::clustering::background::PARTIAL_RULE.min_obs",
+      "tex": "4",
+      "text": "Sec. 4.1 '$k = 4$'",
+      "value": 4
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnPartialMinObsWord",
+      "note": null,
+      "printed": true,
+      "source": "thor::clustering::background::PARTIAL_RULE.min_obs",
+      "tex": "four",
+      "text": "Sec. 2.3, 4.3, 5.1 (twice, and Fig. 3's caption) 'four detections on two nights'; Sec. 5.1 'a chance grouping of four'",
+      "value": 4
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "SeedCarryForwardConfig::default().min_nights",
+          "value": 2
+        },
+        {
+          "agrees": false,
+          "source": "THORConfig::default() seed_carryforward.min_nights",
+          "value": 3
+        },
+        {
+          "agrees": false,
+          "source": "run config seed_carryforward.min_nights",
+          "value": 3
+        },
+        {
+          "agrees": true,
+          "source": "r07dp2 as run: seed_carryforward.min_nights after each job's GridContract::apply",
+          "value": [
+            {
+              "count": 110,
+              "value": 2
+            }
+          ]
+        }
+      ],
+      "kind": "public const",
+      "name": "\\cnPartialMinNights",
+      "note": "The carry's floor as run is PARTIAL_RULE: contract::enable_own_fit_carry sets seed_carryforward.min_obs/min_nights to it on every lattice shell, over the run config's 5 on 3 (and over THORConfig::default()'s 5 on 3).",
+      "printed": true,
+      "source": "thor::clustering::background::PARTIAL_RULE.min_nights",
+      "tex": "2",
+      "text": "Sec. 4.1 '$m = 2$'",
+      "value": 2
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnPartialMinNightsWord",
+      "note": null,
+      "printed": true,
+      "source": "thor::clustering::background::PARTIAL_RULE.min_nights",
+      "tex": "two",
+      "text": "Sec. 2.3, 4.3, 5.1 (twice, and Fig. 3's caption) 'on two nights'; Sec. 5.1 'two such pairs on two nights'",
+      "value": 2
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "THORConfig::default() bvh.query.guard.CovarianceOriented.corner_factor",
+          "value": 1.6666666666666667
+        },
+        {
+          "agrees": true,
+          "source": "run config bvh.query.guard.CovarianceOriented.corner_factor",
+          "value": 1.6666666666666667
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnGuardCornerFactor",
+      "note": null,
+      "printed": false,
+      "source": "thor::bvh::config::default_guard_corner_factor()",
+      "tex": "5/3",
+      "text": "",
+      "value": 1.6666666666666667
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "ResolvedSigmas::resolve(run config, n).gather_guard_n_sigma",
+          "value": 5.0
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnGuardNSigma",
+      "note": "\\fgGuardNSigma (fig_gather) is the same guard as that figure's run resolved it",
+      "printed": true,
+      "source": "ResolvedSigmas::resolve(THORConfig::default(), DEFAULT_SIZING_N_SIGMA).gather_guard_n_sigma (bvh.query.guard: the tiling sigma times the corner factor)",
+      "tex": "5",
+      "text": "Sec. 3.1 'drawn at 5 standard deviations'",
+      "value": 5.0
+    },
+    {
+      "checks": [],
+      "kind": "derived",
+      "name": "\\cnBoxCornerTwoDirections",
+      "note": null,
+      "printed": true,
+      "source": "DEFAULT_SIZING_N_SIGMA * sqrt(2)",
+      "tex": "4.2",
+      "text": "Sec. 3.1 'corners at 4.2'",
+      "value": 4.242640687119286
+    },
+    {
+      "checks": [],
+      "kind": "derived",
+      "name": "\\cnBoxCornerThreeDirections",
+      "note": null,
+      "printed": true,
+      "source": "DEFAULT_SIZING_N_SIGMA * sqrt(3)",
+      "tex": "5.2",
+      "text": "Sec. 3.1 'to 5.2$\\sigma$'",
+      "value": 5.196152422706632
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config bvh.index.chord_sigma_fraction",
+          "value": 0.25
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnChordFraction",
+      "note": null,
+      "printed": false,
+      "source": "bvh.index.chord_sigma_fraction",
+      "tex": "0.25",
+      "text": "",
+      "value": 0.25
+    },
+    {
+      "checks": [],
+      "kind": "config default",
+      "name": "\\cnChordFractionWords",
+      "note": null,
+      "printed": true,
+      "source": "bvh.index.chord_sigma_fraction",
+      "tex": "a quarter",
+      "text": "Sec. 3.1 'by more than a quarter of the ellipse's size'",
+      "value": 0.25
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnOriginEarthRhoMax",
+      "note": "the rule applies under tangent_origin = Auto (THORConfig::default(): \"Auto\"; run config: \"Auto\"); r07dp2's contracts, applied at the pin, set tangent_origin to [{\"count\":110,\"value\":\"Sun\"}]",
+      "printed": false,
+      "source": "thor::clustering::adaptive::AUTO_ORIGIN_EARTH_RHO_MAX (au, mean geocentric distance below which the frame is geocentric)",
+      "tex": "0.5",
+      "text": "",
+      "value": 0.5
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnOriginHelioRMin",
+      "note": null,
+      "printed": false,
+      "source": "thor::clustering::adaptive::AUTO_ORIGIN_HELIO_R_MIN (au, mean heliocentric distance above which the frame is heliocentric)",
+      "tex": "1.5",
+      "text": "",
+      "value": 1.5
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config clustering.filter.rchi2_threshold",
+          "value": 10.0
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnClusterRChiSq",
+      "note": null,
+      "printed": true,
+      "source": "clustering.filter.rchi2_threshold",
+      "tex": "10",
+      "text": "Sec. 4.1 'exceeds 10 is dropped'",
+      "value": 10.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "THORConfig::default() tracklets.pair_n_sigma",
+          "value": 3.0
+        },
+        {
+          "agrees": true,
+          "source": "run config tracklets.pair_n_sigma",
+          "value": 3.0
+        },
+        {
+          "agrees": true,
+          "source": "THORConfig::default() tracklets.chain_n_sigma",
+          "value": 3.0
+        },
+        {
+          "agrees": true,
+          "source": "run config tracklets.chain_n_sigma",
+          "value": 3.0
+        },
+        {
+          "agrees": true,
+          "source": "THORConfig::default() dc.outlier_n_sigma",
+          "value": 3.0
+        },
+        {
+          "agrees": true,
+          "source": "run config dc.outlier_n_sigma",
+          "value": 3.0
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnKappaNSigma",
+      "note": "the text's one kappa is three knobs in THOR: the pair gate (tracklets.pair_n_sigma), the claim disc (tracklets.chain_n_sigma) and the OD rejection (dc.outlier_n_sigma); the checks state each",
+      "printed": true,
+      "source": "tracklets.pair_n_sigma",
+      "tex": "3",
+      "text": "Sec. 4.2 'the radius holding 3$\\sigma$ in two dimensions'",
+      "value": 3.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "sigma_radius(tracklets.pair_n_sigma, dof::CHART_2D)",
+          "value": 3.439354311771442
+        },
+        {
+          "agrees": true,
+          "source": "ResolvedSigmas chain_radius (the claim disc, THORConfig::default())",
+          "value": 3.439354311771442
+        },
+        {
+          "agrees": true,
+          "source": "sigma_radius(dc.outlier_n_sigma, dof::SKY_RESIDUAL) (the OD rejection)",
+          "value": 3.439354311771442
+        },
+        {
+          "agrees": true,
+          "source": "ResolvedSigmas pair_radius (run config)",
+          "value": 3.439354311771442
+        },
+        {
+          "agrees": true,
+          "source": "ResolvedSigmas chain_radius (run config)",
+          "value": 3.439354311771442
+        },
+        {
+          "agrees": true,
+          "source": "sigma_radius(run dc.outlier_n_sigma, dof::SKY_RESIDUAL)",
+          "value": 3.439354311771442
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnKappa",
+      "note": null,
+      "printed": true,
+      "source": "ResolvedSigmas::resolve(THORConfig::default(), n).pair_radius = sigma_radius(tracklets.pair_n_sigma, 2)",
+      "tex": "3.44",
+      "text": "Sec. 4.2 '$\\kappa = 3.44$'",
+      "value": 3.439354311771442
+    },
+    {
+      "checks": [],
+      "kind": "public fn",
+      "name": "\\cnKappaSq",
+      "note": null,
+      "printed": true,
+      "source": "sigma_radius(dc.outlier_n_sigma, dof::SKY_RESIDUAL)^2 (thor_dc::refine_single's rejection bar)",
+      "tex": "11.8",
+      "text": "Sec. 4.4 '$\\kappa^{2} = 11.8$'",
+      "value": 11.829158081900808
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config tracklets.sagitta_n_sigma",
+          "value": null
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnSagittaNSigmaWord",
+      "note": null,
+      "printed": true,
+      "source": "tracklets.sagitta_n_sigma (null: follows tracklets.pair_n_sigma)",
+      "tex": "three",
+      "text": "Sec. 4.2 'than three times its own uncertainty'",
+      "value": 3.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config grid_sweep_mode.CadenceAdaptive.min_exposures",
+          "value": 4
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnCadenceMinExposuresWord",
+      "note": null,
+      "printed": true,
+      "source": "grid_sweep_mode.CadenceAdaptive.min_exposures",
+      "tex": "four",
+      "text": "Sec. 4.2 'imaged at least four times that night'",
+      "value": 4.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config weighting.trails.k_valid",
+          "value": 2.2
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnTrailMinLengthSeeing",
+      "note": "the minimum trail length that measures a rate, in seeings",
+      "printed": true,
+      "source": "weighting.trails.k_valid",
+      "tex": "2.2",
+      "text": "Sec. 4.2 prints 'about twice the seeing'",
+      "value": 2.2
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config tracklets.chain_max_claim_radius_deg",
+          "value": 0.05
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnClaimCapDeg",
+      "note": null,
+      "printed": true,
+      "source": "tracklets.chain_max_claim_radius_deg",
+      "tex": "0.05",
+      "text": "Sec. 4.3 'or $0.05^{\\circ}$'; Sec. 5.3 'a fixed cap of $0.05^{\\circ}$'",
+      "value": 0.05
+    },
+    {
+      "checks": [
+        {
+          "agrees": false,
+          "source": "run config seed_carryforward.accumulate",
+          "value": null
+        },
+        {
+          "agrees": true,
+          "source": "r07dp2 as run: seed_carryforward.accumulate.max_passes after each job's GridContract::apply",
+          "value": [
+            {
+              "count": 110,
+              "value": 64
+            }
+          ]
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnCarryMaxPasses",
+      "note": "the run config sets no accumulate block; contract::enable_own_fit_carry installs AccumulateConfig::default() (carry_hypotheses on) on every lattice shell",
+      "printed": true,
+      "source": "AccumulateConfig::default().max_passes (seed_carryforward.accumulate.max_passes)",
+      "tex": "64",
+      "text": "Sec. 4.3 'at most 64 times'",
+      "value": 64
+    },
+    {
+      "checks": [
+        {
+          "agrees": false,
+          "source": "THORConfig::default() tracklets.max_chain_seeds",
+          "value": 262144
+        },
+        {
+          "agrees": false,
+          "source": "run config tracklets.max_chain_seeds",
+          "value": 262144
+        },
+        {
+          "agrees": false,
+          "source": "r07dp2 as run: tracklets.max_chain_seeds after each job's GridContract::apply",
+          "value": [
+            {
+              "count": 110,
+              "value": 262144
+            }
+          ]
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnSeedStoreTypeDefault",
+      "note": "the sub-config's own default; THORConfig::default() and r07dp2 set 262,144",
+      "printed": true,
+      "source": "TrackletConfig::default().max_chain_seeds",
+      "tex": "4096",
+      "text": "Sec. 4.3 'a store of 4096'",
+      "value": 4096
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "THORConfig::default() tracklets.max_chain_seeds",
+          "value": 262144
+        },
+        {
+          "agrees": true,
+          "source": "r07dp2 as run: tracklets.max_chain_seeds after each job's GridContract::apply",
+          "value": [
+            {
+              "count": 110,
+              "value": 262144
+            }
+          ]
+        }
+      ],
+      "kind": "run config",
+      "name": "\\cnSeedStoreRun",
+      "note": null,
+      "printed": false,
+      "source": "tracklets.max_chain_seeds",
+      "tex": "262{,}144",
+      "text": "",
+      "value": 262144
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "the same at the run config's od.range_grid",
+          "value": 13
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnRangeNodes",
+      "note": "the outer nodes sit at +-3 sigma; the disc they are tested against has radius mahalanobis_radius() = 3.4394",
+      "printed": true,
+      "source": "2 m + 1, m = RangeGridConfig::rdot_half_nodes() with the rate axis on the covariance slice (the range axis's floor(mahalanobis_radius() / step_sigma)), at THORConfig::default() od.range_grid",
+      "tex": "13",
+      "text": "Sec. 4.4 '13 distances'",
+      "value": 13
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config od.range_grid.n_sigma",
+          "value": 3.0
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnRangeNSigma",
+      "note": null,
+      "printed": true,
+      "source": "od.range_grid.n_sigma",
+      "tex": "3",
+      "text": "Sec. 4.4 'across its 3$\\sigma$ extent'",
+      "value": 3.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config od.range_grid.step_sigma",
+          "value": 0.5
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnRangeStepSigma",
+      "note": null,
+      "printed": false,
+      "source": "od.range_grid.step_sigma",
+      "tex": "0.5",
+      "text": "",
+      "value": 0.5
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config od.range_grid.rdot_half_width_au_day",
+          "value": 0.02
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnRangeRateHalfWidth",
+      "note": null,
+      "printed": true,
+      "source": "od.range_grid.rdot_half_width_au_day",
+      "tex": "0.02",
+      "text": "Sec. 4.4 '$\\pm 0.02$\\,au\\,day$^{-1}$'",
+      "value": 0.02
+    },
+    {
+      "checks": [
+        {
+          "agrees": false,
+          "source": "2 rdot_half_nodes() + 1 at THORConfig::default() od.range_grid",
+          "value": 27
+        },
+        {
+          "agrees": false,
+          "source": "2 rdot_half_nodes() + 1 at the run config",
+          "value": 27
+        }
+      ],
+      "kind": "public fn",
+      "name": "\\cnRangeRateNodesTypeDefaultWord",
+      "note": "RangeGridConfig's own default; THORConfig::default() sets rdot_nodes 27",
+      "printed": true,
+      "source": "2 RangeGridConfig::default().rdot_half_nodes() + 1",
+      "tex": "seven",
+      "text": "Sec. 4.4 '(seven by default'",
+      "value": 7
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "the same at THORConfig::default()",
+          "value": 27
+        },
+        {
+          "agrees": true,
+          "source": "r07dp2 as run: od.range_grid.rdot_nodes after each job's GridContract::apply",
+          "value": [
+            {
+              "count": 110,
+              "value": 27
+            }
+          ]
+        }
+      ],
+      "kind": "run config",
+      "name": "\\cnRangeRateNodesRun",
+      "note": null,
+      "printed": true,
+      "source": "2 rdot_half_nodes() + 1 at the run config's od.range_grid (rdot_nodes)",
+      "tex": "27",
+      "text": "Sec. 4.4 'the searches reported here used 27'",
+      "value": 27
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config od.range_grid.clip_sigma",
+          "value": 5.0
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnAttributableClipSigma",
+      "note": null,
+      "printed": false,
+      "source": "od.range_grid.clip_sigma",
+      "tex": "5",
+      "text": "",
+      "value": 5.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config dc.huber_k",
+          "value": 3.0
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnHuberK",
+      "note": "the far-start trigger is the same knob: thor_dc::refine_single holds the range first when the start's median chi exceeds dc.huber_k",
+      "printed": true,
+      "source": "dc.huber_k",
+      "tex": "3",
+      "text": "Sec. 4.4 'quadratic in a detection's $\\chi$ up to 3'; 'with a median $\\chi$ above 3'",
+      "value": 3.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config dc.max_outlier_passes",
+          "value": 3
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnOutlierPassesWord",
+      "note": null,
+      "printed": true,
+      "source": "dc.max_outlier_passes",
+      "tex": "three",
+      "text": "Sec. 4.4 'at most three times'",
+      "value": 3.0
+    },
+    {
+      "checks": [
+        {
+          "agrees": true,
+          "source": "run config od_filter.rchi2_threshold",
+          "value": 3.0
+        }
+      ],
+      "kind": "config default",
+      "name": "\\cnAcceptRChiSq",
+      "note": null,
+      "printed": true,
+      "source": "od_filter.rchi2_threshold",
+      "tex": "3",
+      "text": "Sec. 4.4 'reduced $\\chi^{2}$ is at most 3'",
+      "value": 3.0
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnPatchSideDeg",
+      "note": null,
+      "printed": true,
+      "source": "thor::clustering::background::PATCH_SIDE_DEG",
+      "tex": "0.2",
+      "text": "Sec. 5.1 '$s = 0.2^{\\circ}$'",
+      "value": 0.2
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnAstrometricFloorArcsec",
+      "note": null,
+      "printed": true,
+      "source": "thor::clustering::adaptive::BACKGROUND_ASTROMETRIC_FLOOR_MIN (deg) * 3600",
+      "tex": "1",
+      "text": "Sec. 5.1 'and $1''$'",
+      "value": 1.0
+    },
+    {
+      "checks": [],
+      "kind": "derived",
+      "name": "\\cnScalingPowerPartial",
+      "note": null,
+      "printed": true,
+      "source": "2k - 4 at PARTIAL_RULE.min_obs",
+      "tex": "4",
+      "text": "Sec. 5.1 'rise as $R^{4}$ at small radii'",
+      "value": 4
+    },
+    {
+      "checks": [],
+      "kind": "derived",
+      "name": "\\cnScalingPowerPartialOrdinal",
+      "note": null,
+      "printed": true,
+      "source": "2k - 4 at PARTIAL_RULE.min_obs",
+      "tex": "fourth",
+      "text": "Sec. 5.1 'as the fourth power of $R$'",
+      "value": 4
+    },
+    {
+      "checks": [],
+      "kind": "derived",
+      "name": "\\cnScalingPowerCriterionOrdinal",
+      "note": null,
+      "printed": true,
+      "source": "2k - 4 at thor::criterion::Criterion::default().min_obs",
+      "tex": "eighth",
+      "text": "Sec. 5.1 'and the eighth for six on four'",
+      "value": 8
+    },
+    {
+      "checks": [],
+      "kind": "public fn",
+      "name": "\\cnDriftEdgeStatesWordCap",
+      "note": "the offsets are +-n along each column of the Cholesky factor of Sigma_0",
+      "printed": true,
+      "source": "thor::sizing::sigma_point_offsets(full-rank covariance, n).len() (PropagatorDrift's edge states)",
+      "tex": "Twelve",
+      "text": "Sec. 5.2 'Twelve states'",
+      "value": 12
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnLadderRatio",
+      "note": null,
+      "printed": true,
+      "source": "thor::sizing::LADDER_RATIO",
+      "tex": "0.8",
+      "text": "Sec. 5.2 'each rung $0.8$ of the one above'",
+      "value": 0.8
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnTwoNightsDays",
+      "note": null,
+      "printed": true,
+      "source": "thor::sizing::TWO_NIGHTS_DAYS",
+      "tex": "1",
+      "text": "Sec. 5.3 prints 'at least a day', 'shorter than a day'",
+      "value": 1.0
+    },
+    {
+      "checks": [],
+      "kind": "public const",
+      "name": "\\cnWindowMinHoursWord",
+      "note": null,
+      "printed": true,
+      "source": "thor::sizing::WINDOW_MIN_DAYS * 24",
+      "tex": "one",
+      "text": "Sec. 5.3 'down to one hour'",
+      "value": 1.0
+    },
+    {
+      "checks": [],
+      "kind": "build",
+      "name": "\\cnThorCommit",
+      "note": null,
+      "printed": true,
+      "source": "thor.rev (THOR_PIN, checked against vendor/thor-rs)",
+      "tex": "939d286e",
+      "text": "App. D 'made at \\thor\\ commit 939d286e'",
+      "value": "939d286ef15663d9b6e5d3e71ca8fd998707c9b0"
+    }
+  ],
+  "not_sourced": [
+    {
+      "constant": "eta thresholds 0.01 and 0.25",
+      "file": "src/transform.rs",
+      "symbol": "project_obs_covariance_escalating (private fn): local consts EPS1, EPS2",
+      "text": "Sec. 3.4"
+    },
+    {
+      "constant": "unscented transform: five sigma points, Cholesky of 3 Sigma_d, fewer than three survivors fall back",
+      "file": "src/transform.rs",
+      "symbol": "sigma_point_project_cov (private fn): local consts N = 2, NL = 3; `proj.len() < 3`",
+      "text": "Sec. 3.4"
+    },
+    {
+      "constant": "night = floor(t + lambda/360 - 0.5)",
+      "file": "src/observations/obscodes.rs",
+      "symbol": "ObscodeLongitudes::night_utc (public fn, inline literals 360.0 and 0.5)",
+      "text": "Sec. 2.3"
+    },
+    {
+      "constant": "the seed's quadratic: at least three nights, curvature above half the radius",
+      "file": "src/pipeline/stages/seeds.rs",
+      "symbol": "OrderRule::order (private): `nights >= 3`, `sag > 0.5 * self.radius`",
+      "text": "Sec. 4.3"
+    },
+    {
+      "constant": "the attributable: a cubic, a quadratic below eight detections",
+      "file": "src/orbit_determination/range_grid.rs",
+      "symbol": "attributable_fit (private fn): `if t.len() >= 8 { 3 } else { 2 }`",
+      "text": "Sec. 4.4"
+    },
+    {
+      "constant": "accepted orbits sharing 70 percent of their detections reduced to one",
+      "file": "src/pipeline/stages/window_loop.rs",
+      "symbol": "od_batch (private fn): Jaccard of selected member sets `>= 0.7`",
+      "text": "Sec. 4.4"
+    },
+    {
+      "constant": "same-night repeats within half a radius",
+      "file": "src/pipeline/stages/cluster.rs",
+      "symbol": "collapse_repeats (public fn, inline literal `0.5 * c.r_cluster_deg`)",
+      "text": "Sec. 5.1"
+    },
+    {
+      "constant": "the attributable clip's 1 arcsec floor",
+      "file": "src/orbit_determination/range_grid.rs",
+      "symbol": "inline `floor_rad = (1.0 / 3600.0_f64).to_radians()` in the attributable clip",
+      "text": ""
+    },
+    {
+      "constant": "physical bounds (r 0.01-1000 au, v <= 2 au/day, ...)",
+      "file": "src/orbit_determination/filter.rs",
+      "symbol": "physical_rejection_reason (public fn, inline literals)",
+      "text": ""
+    },
+    {
+      "constant": "THOR 1's 300 x 300 velocities over -0.1 to 0.1 deg/day; DBSCAN at 0.005 deg and five detections",
+      "file": "not in THOR 2",
+      "symbol": "THOR 1 (Python, Moeyens et al. 2021 Section 3.1)",
+      "text": "Sec. 4.1"
+    }
+  ],
+  "run_config": {
+    "fields_removed_from_the_job_config": [
+      "clustering.background_radius.budget_enforcement"
+    ],
+    "loads_at_pin": true,
+    "path": "/home/moeyensj/projects/thor/thor-rust-experiments/search/step1/sizing_contract_2026-11-03/gate1/run_side/configs/75104c17511f.json",
+    "what_ran": {
+      "contract_overrides": [
+        {
+          "count": 110,
+          "value": {
+            "from": "lattice",
+            "key": "adaptive.hypotheses",
+            "to": "tracklet_seeded"
+          }
+        },
+        {
+          "count": 110,
+          "value": {
+            "from": "Off",
+            "key": "clustering.tracklets",
+            "to": "Include"
+          }
+        },
+        {
+          "count": 110,
+          "value": {
+            "from": null,
+            "key": "seed_carryforward.accumulate",
+            "to": {
+              "carry_hypotheses": true,
+              "max_passes": 64,
+              "polynomial_order": "auto_by_span"
+            }
+          }
+        },
+        {
+          "count": 110,
+          "value": {
+            "from": 3,
+            "key": "seed_carryforward.min_nights",
+            "to": 2
+          }
+        },
+        {
+          "count": 110,
+          "value": {
+            "from": 5,
+            "key": "seed_carryforward.min_obs",
+            "to": 4
+          }
+        },
+        {
+          "count": 110,
+          "value": {
+            "from": "Auto",
+            "key": "tangent_origin",
+            "to": "Sun"
+          }
+        },
+        {
+          "count": 110,
+          "value": {
+            "from": false,
+            "key": "tracklets.cross_night_chains",
+            "to": true
+          }
+        },
+        {
+          "count": 3,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Accumulate": {
+                "window_days": 2.611340115968002
+              }
+            }
+          }
+        },
+        {
+          "count": 9,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 3.1876710400000015,
+                "window_days": 6.375342080000003
+              }
+            }
+          }
+        },
+        {
+          "count": 3,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 4.980736000000002,
+                "window_days": 9.961472000000004
+              }
+            }
+          }
+        },
+        {
+          "count": 8,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 12.16,
+                "window_days": 24.32
+              }
+            }
+          }
+        },
+        {
+          "count": 6,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 7.782400000000002,
+                "window_days": 15.564800000000004
+              }
+            }
+          }
+        },
+        {
+          "count": 2,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 6.225920000000002,
+                "window_days": 12.451840000000004
+              }
+            }
+          }
+        },
+        {
+          "count": 14,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 15.2,
+                "window_days": 30.4
+              }
+            }
+          }
+        },
+        {
+          "count": 7,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 3.984588800000002,
+                "window_days": 7.969177600000004
+              }
+            }
+          }
+        },
+        {
+          "count": 17,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Accumulate": {
+                "window_days": 1.3370061393756174
+              }
+            }
+          }
+        },
+        {
+          "count": 18,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Accumulate": {
+                "window_days": 1.6712576742195215
+              }
+            }
+          }
+        },
+        {
+          "count": 4,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 2.0401094656000014,
+                "window_days": 4.080218931200003
+              }
+            }
+          }
+        },
+        {
+          "count": 7,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Accumulate": {
+                "window_days": 3.2641751449600025
+              }
+            }
+          }
+        },
+        {
+          "count": 11,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Accumulate": {
+                "window_days": 2.0890720927744018
+              }
+            }
+          }
+        },
+        {
+          "count": 1,
+          "value": {
+            "from": "Single",
+            "key": "window.mode",
+            "to": {
+              "Fixed": {
+                "step_days": 2.5501368320000015,
+                "window_days": 5.100273664000003
+              }
+            }
+          }
+        }
+      ],
+      "finished_jobs_with_run_json": 109,
+      "job_config_keys_differing_from_this_file": [
+        {
+          "count": 13,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "hypothesis.grid_id"
+          ]
+        },
+        {
+          "count": 45,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "hypothesis.grid_id",
+            "hypothesis.population"
+          ]
+        },
+        {
+          "count": 1,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "clustering.background_radius.window_walk.memory_limit_gib",
+            "hypothesis.grid_id",
+            "hypothesis.population"
+          ]
+        },
+        {
+          "count": 5,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "clustering.background_radius.window_walk.memory_limit_gib",
+            "hypothesis.grid_id",
+            "seed_carryforward"
+          ]
+        },
+        {
+          "count": 4,
+          "value": [
+            "clustering.background_radius.window_walk.memory_limit_gib",
+            "hypothesis.grid_id",
+            "seed_carryforward"
+          ]
+        },
+        {
+          "count": 11,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "bvh.query.min_mjd_utc",
+            "clustering.background_radius.window_walk.memory_limit_gib",
+            "hypothesis.grid_id",
+            "seed_carryforward"
+          ]
+        },
+        {
+          "count": 11,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "bvh.query.min_mjd_utc",
+            "hypothesis.grid_id"
+          ]
+        },
+        {
+          "count": 4,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "bvh.query.min_mjd_utc",
+            "hypothesis.grid_id",
+            "hypothesis.population"
+          ]
+        },
+        {
+          "count": 2,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "bvh.query.min_mjd_utc",
+            "hypothesis.grid_id",
+            "seed_carryforward"
+          ]
+        },
+        {
+          "count": 10,
+          "value": [
+            "hypothesis.grid_id"
+          ]
+        },
+        {
+          "count": 1,
+          "value": []
+        },
+        {
+          "count": 2,
+          "value": [
+            "hypothesis.grid_id",
+            "seed_carryforward"
+          ]
+        },
+        {
+          "count": 1,
+          "value": [
+            "bvh.query.max_mjd_utc",
+            "hypothesis.grid_id",
+            "seed_carryforward"
+          ]
+        }
+      ],
+      "jobs": 110,
+      "run_json_config_snapshot_at_overridden_keys": [
+        {
+          "count": 109,
+          "value": {
+            "key": "adaptive.hypotheses",
+            "snapshot_holds": "the job's own config.json value (before the contract)"
+          }
+        },
+        {
+          "count": 109,
+          "value": {
+            "key": "clustering.tracklets",
+            "snapshot_holds": "the job's own config.json value (before the contract)"
+          }
+        },
+        {
+          "count": 109,
+          "value": {
+            "key": "seed_carryforward.accumulate",
+            "snapshot_holds": "the job's own config.json value (before the contract)"
+          }
+        },
+        {
+          "count": 109,
+          "value": {
+            "key": "seed_carryforward.min_nights",
+            "snapshot_holds": "the job's own config.json value (before the contract)"
+          }
+        },
+        {
+          "count": 109,
+          "value": {
+            "key": "seed_carryforward.min_obs",
+            "snapshot_holds": "the job's own config.json value (before the contract)"
+          }
+        },
+        {
+          "count": 109,
+          "value": {
+            "key": "tangent_origin",
+            "snapshot_holds": "the job's own config.json value (before the contract)"
+          }
+        },
+        {
+          "count": 109,
+          "value": {
+            "key": "tracklets.cross_night_chains",
+            "snapshot_holds": "the job's own config.json value (before the contract)"
+          }
+        },
+        {
+          "count": 109,
+          "value": {
+            "key": "window.mode",
+            "snapshot_holds": "the job's own config.json value (before the contract)"
+          }
+        }
+      ],
+      "run_json_policies": [
+        {
+          "count": 117,
+          "value": {
+            "arms_cross_night_chains": true,
+            "carry_hypotheses": true,
+            "search_mode": "lattice",
+            "tracklets": "include",
+            "window_mode": "accumulate"
+          }
+        },
+        {
+          "count": 267,
+          "value": {
+            "arms_cross_night_chains": true,
+            "carry_hypotheses": true,
+            "search_mode": "lattice",
+            "tracklets": "include",
+            "window_mode": "fixed"
+          }
+        }
+      ],
+      "statement": "r07dp2's grid contract rewrote keys of this config for every test orbit. `contract_overrides` applies each job's own contract to this file with GridContract::apply at the pin; the run itself ran the THOR of `thor_image`. `run_json_config_snapshot_at_overridden_keys` says what each run.json's config_snapshot holds at those keys.",
+      "thor_image": [
+        {
+          "digest": "sha256:526e17134570fd3f2389067fcef27e04d92499693b256b45a7cfa8ef6305b8cd",
+          "tag": "us-west1-docker.pkg.dev/moeyens-thor-dev/ai/thor:ce6e3111-assist"
+        }
+      ]
+    }
+  },
+  "sources": "in order of preference: a public const or fn of THOR; THORConfig::default(), serialised; the run config of r07dp2 for values the reported searches set. Every macro lists the other places THOR states the same value under `checks`, with whether each agrees.",
+  "text_as_of": "thor_paper2 eee9aa5 (paper-a-tracklets-carry-od)",
+  "thor_pin": "939d286ef15663d9b6e5d3e71ca8fd998707c9b0",
+  "thor_source": "git@github.com:moeyensj/thor_rust.git"
+}
